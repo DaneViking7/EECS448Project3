@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMoveScript : MonoBehaviour {
 
-    public int playerJumpPower = 375;
+    public int playerJumpPower = 1250;
 
 	// Update is called once per frame
 	void Update () {

@@ -324,9 +324,9 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 10
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -425,4 +425,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ca5385663e3d8a4f890f4fa9eca3979, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerJumpPower: 375
+  playerJumpPower: 1250
