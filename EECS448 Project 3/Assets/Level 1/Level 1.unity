@@ -113,6 +113,48 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &176442567
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4461077592422608, guid: 8c7620aaaf2d9784eb581aebadaf9687, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 4461077592422608, guid: 8c7620aaaf2d9784eb581aebadaf9687, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -3.88794
+      objectReference: {fileID: 0}
+    - target: {fileID: 4461077592422608, guid: 8c7620aaaf2d9784eb581aebadaf9687, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4461077592422608, guid: 8c7620aaaf2d9784eb581aebadaf9687, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4461077592422608, guid: 8c7620aaaf2d9784eb581aebadaf9687, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4461077592422608, guid: 8c7620aaaf2d9784eb581aebadaf9687, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4461077592422608, guid: 8c7620aaaf2d9784eb581aebadaf9687, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4461077592422608, guid: 8c7620aaaf2d9784eb581aebadaf9687, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 8c7620aaaf2d9784eb581aebadaf9687, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1109826739
 GameObject:
   m_ObjectHideFlags: 0
@@ -223,6 +265,7 @@ GameObject:
   - component: {fileID: 1689668613}
   - component: {fileID: 1689668612}
   - component: {fileID: 1689668611}
+  - component: {fileID: 1689668615}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -293,6 +336,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1689668615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1689668610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e02774a8fa02e2479759c533ec30059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xMin: 0
+  xMax: 200
+  yMin: 0
+  yMax: 0
 --- !u!1 &2126355859
 GameObject:
   m_ObjectHideFlags: 0
@@ -307,7 +365,7 @@ GameObject:
   - component: {fileID: 2126355864}
   m_Layer: 0
   m_Name: Dino
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -326,7 +384,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 1
   m_AngularDrag: 0.05
-  m_GravityScale: 10
+  m_GravityScale: 7
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -408,8 +466,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2126355859}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.66, y: 1.39, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalPosition: {x: -8.06, y: -3.956429, z: 0}
+  m_LocalScale: {x: 1.75, y: 1.75, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -425,4 +483,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ca5385663e3d8a4f890f4fa9eca3979, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerSpeed: 10
   playerJumpPower: 1250
