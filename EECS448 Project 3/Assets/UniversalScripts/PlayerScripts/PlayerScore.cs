@@ -23,7 +23,7 @@ public class PlayerScore : MonoBehaviour {
         {
             DontDestroyOnLoad(this.gameObject);
             DontDestroyOnLoad(canvas);
-            SceneManager.LoadScene("Store", LoadSceneMode.Single);
+            SceneManager.LoadScene("Level3", LoadSceneMode.Single);
         }
         if(trig.gameObject.tag == "coin")
         {
