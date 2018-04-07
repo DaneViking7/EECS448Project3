@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Kill Object
   - ground
+  - lvlend
+  - coin
   layers:
   - Default
   - TransparentFX
@@ -16,12 +18,12 @@ TagManager:
   - 
   - 
   - 
+  - Background
+  - Background2
   - 
   - 
   - 
-  - 
-  - 
-  - 
+  - Main
   - 
   - 
   - 
@@ -42,4 +44,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 845919041
+    locked: 0
+  - name: Background2
+    uniqueID: 2034185789
+    locked: 0
+  - name: Main
+    uniqueID: 320211779
     locked: 0
