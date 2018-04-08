@@ -28,7 +28,7 @@ public class PlayerScore : MonoBehaviour {
             {
                 lvl++;
                 transform.position = new Vector2(-8.06f, -3.956429f);
-                SceneManager.LoadScene("Level3", LoadSceneMode.Single);
+                SceneManager.LoadScene("Level 2", LoadSceneMode.Single);
             }
             else
             {
