@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 50236304207903086}
   - component: {fileID: 114278891379140184}
   - component: {fileID: 114096975063289944}
+  - component: {fileID: 114740431591421194}
   m_Layer: 0
   m_Name: Dino
   m_TagString: Player
@@ -114,6 +115,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerSpeed: 10
   moveX: 0
+--- !u!114 &114740431591421194
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1117422040524958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d4c2ade5e320fe46b1b39616f8fa676, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 0}
+  coinCountUI: {fileID: 0}
 --- !u!212 &212083563409587782
 SpriteRenderer:
   m_ObjectHideFlags: 1
