@@ -35,7 +35,7 @@ public class PlayerHealth : MonoBehaviour {
     void Die () {
         //SceneManager.LoadScene("Level 2", LoadSceneMode.Single);
         Destroy(this.gameObject);
-        Destroy(canvas);
+        Destroy(canvas);//Currently must uncomment this line in Level 2 -- Ron H. 4/8/18
         SceneManager.LoadScene("Level 1", LoadSceneMode.Single);
     }
 
