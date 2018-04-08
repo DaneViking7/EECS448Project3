@@ -10,6 +10,13 @@ public class PlayerHealth : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		//GameObject player = GameObject.FindWithTag("Player");
+
+//I commented out the below line while fixing merge conflict. --Ron 4/8/18
+//     private bool dead;
+//     public GameObject canvas;
+//     // Use this for initialization
+//     void Start () {
+
         dead = false;
 	}
 	
@@ -26,7 +33,10 @@ public class PlayerHealth : MonoBehaviour {
 	}
 
     void Die () {
-        SceneManager.LoadScene("Level 2", LoadSceneMode.Single);
+        //SceneManager.LoadScene("Level 2", LoadSceneMode.Single);
+        Destroy(this.gameObject);
+        Destroy(canvas);
+        SceneManager.LoadScene("Level 1", LoadSceneMode.Single);
     }
 
     private void OnTriggerEnter2D(Collider2D col)
