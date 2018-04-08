@@ -11,6 +11,7 @@ public class PlayerScore : MonoBehaviour {
     public GameObject coinCountUI;
     private bool moonshoes = false;
     private bool mini = false;
+    private int lvl = 1;
 
     // Update is called once per frame
     void Update () {
@@ -23,7 +24,23 @@ public class PlayerScore : MonoBehaviour {
         {
             DontDestroyOnLoad(this.gameObject);
             DontDestroyOnLoad(canvas);
-            SceneManager.LoadScene("Level 1", LoadSceneMode.Single);
+            if (SceneManager.GetActiveScene().name != "Store")
+            {
+                lvl++;
+                transform.position = new Vector2(-8.06f, -3.956429f);
+                SceneManager.LoadScene("Level3", LoadSceneMode.Single);
+            }
+            else
+            {
+                if (lvl == 2)
+                {
+                    SceneManager.LoadScene("Level 2", LoadSceneMode.Single);
+                }
+                else if (lvl == 3)
+                {
+                    SceneManager.LoadScene("Level3", LoadSceneMode.Single);
+                }
+            }
         }
         if(trig.gameObject.tag == "coin")
         {

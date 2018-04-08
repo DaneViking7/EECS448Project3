@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class PlayerMoveScript : MonoBehaviour {
 
     public int playerSpeed = 10;
-    private bool facingRight = false;
     private int playerJumpPower = 1250;
     public float moveX;
     private bool isGrounded;
@@ -23,18 +22,26 @@ public class PlayerMoveScript : MonoBehaviour {
         {
             Jump();
         }
-        if (SceneManager.GetActiveScene().name == "Store")
+        if (SceneManager.GetActiveScene().name == "Level3")
         {
-            if (moveX < 0.0f && facingRight == false)
-                FlipPlayer();
-            else if (moveX > 0.0f && facingRight == true)
-                FlipPlayer();
+            if (moveX < 0.0f)
+                GetComponent<SpriteRenderer>().flipX = true;
+            else if (moveX > 0.0f)
+                GetComponent<SpriteRenderer>().flipX = false;
 
             gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(moveX * playerSpeed, gameObject.GetComponent<Rigidbody2D>().velocity.y);
+            if (moveX != 0 && isGrounded == true)
+                GetComponent<Animator>().SetBool("IsRunning", true);
+            else
+                GetComponent<Animator>().SetBool("IsRunning", false);
         }
         else
         {
             gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(playerSpeed, gameObject.GetComponent<Rigidbody2D>().velocity.y);
+            if(isGrounded == true)
+                GetComponent<Animator>().SetBool("IsRunning", true);
+            else
+                GetComponent<Animator>().SetBool("IsRunning", false);
         }
     }
 
@@ -42,14 +49,6 @@ public class PlayerMoveScript : MonoBehaviour {
     {
         GetComponent<Rigidbody2D>().AddForce (Vector2.up * playerJumpPower);
         isGrounded = false;
-    }
-
-    void FlipPlayer()
-    {
-        facingRight = !facingRight;
-        Vector2 localScale = gameObject.transform.localScale;
-        localScale.x *= 1;
-        transform.localScale = localScale;
     }
 
    private void OnCollisionEnter2D(Collision2D col)

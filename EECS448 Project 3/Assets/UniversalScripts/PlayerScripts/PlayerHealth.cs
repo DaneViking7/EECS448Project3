@@ -5,10 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour {
 
-    public bool dead;
-
-	// Use this for initialization
-	void Start () {
+    private bool dead;
+    public GameObject canvas;
+    // Use this for initialization
+    void Start () {
         dead = false;
 	}
 	
@@ -21,6 +21,8 @@ public class PlayerHealth : MonoBehaviour {
 	}
 
     void Die () {
+        Destroy(this.gameObject);
+        Destroy(canvas);
         SceneManager.LoadScene("Level 1", LoadSceneMode.Single);
     }
 
