@@ -26,7 +26,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - DinoLayer
   - 
   - 
   - 
@@ -51,4 +51,7 @@ TagManager:
     locked: 0
   - name: Main
     uniqueID: 320211779
+    locked: 0
+  - name: DinoLayer
+    uniqueID: 31110431
     locked: 0

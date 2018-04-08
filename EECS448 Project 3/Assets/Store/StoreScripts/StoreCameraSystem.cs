@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class StoreCameraSystem : MonoBehaviour {
 
-	private GameObject player;
-	public float xMin;
-	public float xMax;
-	public float yMin;
-	public float yMax;
+	private GameObject player; //!<dino object
+	public float xMin; //!< minimum x position for the camera
+	public float xMax; //!< maximum x position for the camera
+	public float yMin; //!< minimum y position for the camera
+	public float yMax; //!< maximum y position for the camera
 
 	// Use this for initialization
 	void Start () {
