@@ -18,8 +18,8 @@ public class CameraSystem : MonoBehaviour {
 	
 	// Update is called once per frame
 	void LateUpdate () {
-        float x = Mathf.Clamp(player.transform.position.x + 8, xMin, xMax);
-        float y = Mathf.Clamp(player.transform.position.y, yMin, yMax);
-        gameObject.transform.position = new Vector3(x, y, gameObject.transform.position.z);
+        //float x = Mathf.Clamp(player.transform.position.x + 8, xMin, xMax);
+        //float y = Mathf.Clamp(player.transform.position.y, yMin, yMax);
+        gameObject.transform.position = new Vector3(10, 0, gameObject.transform.position.z);
 	}
 }
