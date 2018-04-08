@@ -4,9 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Kill Object
-  - ground
   - lvlend
+  - ground
+  - Kill Object
   - coin
   layers:
   - Default
@@ -17,13 +17,13 @@ TagManager:
   - UI
   - 
   - 
-  - 
   - Background
-  - Background2
+  - Player
+  - Foreground
   - 
   - 
   - 
-  - Main
+  - 
   - 
   - 
   - 
@@ -46,11 +46,11 @@ TagManager:
     uniqueID: 0
     locked: 0
   - name: Background
-    uniqueID: 845919041
+    uniqueID: 3726424073
     locked: 0
-  - name: Background2
-    uniqueID: 2034185789
+  - name: Player
+    uniqueID: 2299227205
     locked: 0
-  - name: Main
-    uniqueID: 320211779
+  - name: Foreground
+    uniqueID: 2112744471
     locked: 0
