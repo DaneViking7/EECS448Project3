@@ -4,10 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Kill Object
-  - ground
   - lvlend
-  - coin
+  - ground
+  - Kill Object
   layers:
   - Default
   - TransparentFX
@@ -17,14 +16,13 @@ TagManager:
   - UI
   - 
   - 
-<<<<<<< HEAD
   - Background
-  - Background2
   - Player
   - Foreground
->>>>>>> master
   - 
-  - Main
+  - 
+  - 
+  - 
   - 
   - 
   - 
@@ -46,25 +44,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-<<<<<<< HEAD
   - name: Background
-    uniqueID: 2839382175
+    uniqueID: 3726424073
     locked: 0
   - name: Player
-    uniqueID: 1519032389
+    uniqueID: 2299227205
     locked: 0
   - name: Foreground
-    uniqueID: 4284945969
+    uniqueID: 2112744471
     locked: 0
-||||||| merged common ancestors
-=======
-  - name: Background
-    uniqueID: 845919041
-    locked: 0
-  - name: Background2
-    uniqueID: 2034185789
-    locked: 0
-  - name: Main
-    uniqueID: 320211779
-    locked: 0
->>>>>>> master

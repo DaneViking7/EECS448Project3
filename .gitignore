@@ -32,3 +32,6 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+
+EECS448*Project*3/Assets/Standard*/*
+EECS448*Project*3/Assets/Standard*Assets.meta
