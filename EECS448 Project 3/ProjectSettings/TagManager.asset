@@ -20,11 +20,11 @@ TagManager:
   - Background
   - Player
   - Foreground
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Clouds
+  - Store Wall
+  - Store Building Stuff
+  - market stuff
+  - letters
   - 
   - 
   - 
@@ -53,4 +53,19 @@ TagManager:
     locked: 0
   - name: Foreground
     uniqueID: 2112744471
+    locked: 0
+  - name: Clouds
+    uniqueID: 3340058543
+    locked: 0
+  - name: Store Wall
+    uniqueID: 753767187
+    locked: 0
+  - name: Store Building Stuff
+    uniqueID: 2426681737
+    locked: 0
+  - name: market stuff
+    uniqueID: 1120263037
+    locked: 0
+  - name: letters
+    uniqueID: 2409826251
     locked: 0
