@@ -9,11 +9,16 @@ public class PlayerHealth : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		//GameObject player = GameObject.FindWithTag("Player");
         dead = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		if (GameObject.FindWithTag("Player").transform.position.y <= -10.0f) {
+			dead = true;
+			Die();
+		}
         if(dead == true) {
             Die();
         }
