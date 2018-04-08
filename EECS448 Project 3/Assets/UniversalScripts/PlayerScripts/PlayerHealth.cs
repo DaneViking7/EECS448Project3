@@ -21,7 +21,7 @@ public class PlayerHealth : MonoBehaviour {
 	}
 
     void Die () {
-        SceneManager.LoadScene("Level 1", LoadSceneMode.Single);
+        SceneManager.LoadScene("Level 2", LoadSceneMode.Single);
     }
 
     private void OnTriggerEnter2D(Collider2D col)

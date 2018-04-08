@@ -19,7 +19,7 @@ public class PlayerMoveScript : MonoBehaviour {
     void PlayerMove()
     {
         moveX = Input.GetAxis("Horizontal");
-        if(Input.GetButtonDown("Jump") /*&& isGrounded == true*/)
+        if(Input.GetButtonDown("Jump") && isGrounded == true)
         {
             Jump();
         }

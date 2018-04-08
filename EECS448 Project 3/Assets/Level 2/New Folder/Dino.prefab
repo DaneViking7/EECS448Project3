@@ -23,6 +23,8 @@ GameObject:
   - component: {fileID: 61963919320063770}
   - component: {fileID: 50240171039339306}
   - component: {fileID: 114672390984767710}
+  - component: {fileID: 114356701478463324}
+  - component: {fileID: 114983543781391642}
   m_Layer: 0
   m_Name: Dino
   m_TagString: Player
@@ -88,6 +90,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.88, y: 0.94}
   m_EdgeRadius: 0
+--- !u!114 &114356701478463324
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1787867271010630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d0e9ac4a5299c447bef5a61eb863200, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dead: 0
 --- !u!114 &114672390984767710
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -101,6 +115,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerSpeed: 10
   moveX: 0
+--- !u!114 &114983543781391642
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1787867271010630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d4c2ade5e320fe46b1b39616f8fa676, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 0}
+  coinCountUI: {fileID: 0}
 --- !u!212 &212048102973228206
 SpriteRenderer:
   m_ObjectHideFlags: 1
