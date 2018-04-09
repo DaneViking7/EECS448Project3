@@ -1,0 +1,38 @@
+//References
+
+Tutorials to learn how to use Unity:
+    Unity Tutorial - 2D Side Scroller (Super Platformer Bros) Episode 1 - Project Set Up
+        https://www.youtube.com/watch?v=BdlL5bwbCiI&t=663s
+    Unity Tutorial - 2D Side Scroller (Super Platformer Bros) Episode 2 - Camera & Death
+        https://www.youtube.com/watch?v=y3-P2vktSrc&t=635s
+    Unity Tutorial - 2D Side Scroller (Super Platformer Bros) Episode 3 - Basic Enemy
+        https://www.youtube.com/watch?v=-mrGHaAdX8M&t=5s
+    Unity Tutorial - 2D Side Scroller (Super Platformer Bros) Episode 4 - High Score System
+        https://www.youtube.com/watch?v=xsPBiqYvxb4&t=548s
+    Unity Tutorial - 2D Side Scroller (Super Platformer Bros) Episode 5 - Collectables
+        https://www.youtube.com/watch?v=0BQNf8jdaQ4
+    Unity Tutorial - 2D Side Scroller (Super Platformer Bros) Episode 6 - Enemies Again
+        https://www.youtube.com/watch?v=P5sCwJldCx4&t=48s
+    Unity Tutorial - 2D Side Scroller (Super Platformer Bros) Episode 7 - Saving & Loading Data
+        https://www.youtube.com/watch?v=xv6nS6WVpw4
+    Unity Tutorial - 2D Side Scroller (Super Platformer Bros) Episode 8 - Animations
+        https://www.youtube.com/watch?v=Uh_RXjoYU1U&t=36s
+    Unity Tutorial - 2D Side Scroller (Super Platformer Bros) Episode 9 - Parallax Scrolling
+        https://www.youtube.com/watch?v=MRKnd-QI7oU&t=1064s
+    Unity Tutorial - 2D Side Scroller (Super Platformer Bros) Episode 10 - Clouds & Doors
+        https://www.youtube.com/watch?v=8Zwh2X6BCEk&t=77s
+    Unity Tutorial - 2D Side Scroller (Super Platformer Bros) Episode 11 - Character Select System
+        https://www.youtube.com/watch?v=5dNvwcgKsNY
+
+Sprite References:
+    https://opengameart.org/
+    http://easygameacademy.com/
+    Marta Nowaczyk - from https://opengameart.org/
+    https://www.spriters-resource.com/pc_computer/trexgame/sheet/78171/
+    Darius Guerrero - from https://opengameart.org/
+    Heather Lee Harvey -> http://EmeraldActivities.com,  http://opengameart.org/users/emerald
+    http://OpenPixelProject.com
+
+Doxygen plug-in for Unity:
+    http://www.jacobpennock.com/Blog/unity-automatic-documentation-generation-an-editor-plugin/
+
