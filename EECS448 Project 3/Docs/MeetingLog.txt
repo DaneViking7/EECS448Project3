@@ -1,0 +1,153 @@
+3-14-18
+    -Meeting time from 9am-10am in Leep2 Study room
+    -Team members in attendance: Natalie, Annika, Niels, and Ron
+    -Brainstormed project ideas
+        -Yelp clone
+        -Cookie Clicker clone
+        -DinoChrome clone
+        -Bus scheduler
+        -Engineering room scheduler
+    -Natalie started to take notes on meetings
+    -Tasks for next time:
+        -All: continue brainstorming ideas for the project, including development platforms
+
+3-26-18
+    -Meeting time from 9am-10am in Leep2 Study room
+    -Team members in attendance: Natalie, Annika, Niels, and Ron
+    -Finaized game idea: Dinosaur Platform Game modeled after DinoChrome game
+        -Buyable upgrades between levels
+            -aerosol can
+            -shoes
+            -moon boots
+            -jet pack
+            -battle armor
+        -Ability to collect coins along the way
+        -Final level on moon
+        -Store interface to buy upgrades
+        -start out like chrome game but evolve
+    -Decided to use Unity as a development Platform
+    -Initial task division: Natalie - Store
+                            Annika, Niels, Ron - levels
+    -Annika and Natalie: project artifacts, documentation
+    -Tasks for next time:
+        -All: brainstorm more ideas specific to our finalized game idea
+
+3-28-18
+    -Meeting time from 9-10am in Leep2 Study room
+    -Team members in attendance: Natalie, Annika, Niels, and Ron
+    -Level Design:
+        -Desert level to mimic DinoChrome game
+        -Colorful DinoChrome level
+        -winter wonderland
+        -amazon jungle level
+        -underwater level
+        -outer space level 
+    -upgrade functions:
+        -something to shrink you: egg
+        -somthing to make you bigger: broccoli
+        -something to slow you down: dumbell
+        -fire breathing: aerosol can
+        -flying: jet pack
+        -stepping on an obstacle without dying: sandals
+    -Obstacles:
+        -stuff to jump over
+        -stuff to dunk under
+        -stuff to fall into
+        -enemies
+    -Tasks for next time:
+        -All:
+            -Start thinking about how we want to divide the work
+            -continue brainstorming ideas for the game
+        -Niels: find sprite sheets for our dinosaur character
+
+3-29-18
+    -Meeting time from 12:30-2:20pm in Eaton 1005D
+    -Team members in attendance: Natalie, Annika, Niels, and Ron (for the first 15 minutes)
+    -Level 1 layout: drew it out on a whiteboard
+    -Store layout: drew rough ideas of store layout on whiteboard
+    -Updated assigned levels:
+        -Store: Natalie
+        -Level 1: All
+        -Level 1: Annika
+        -Level 2: Ron
+        -Level 3: Niels
+    -Additional potential upgrades (for project 4 expansion)
+        -Dinosaur roar
+        -Headphones
+        -Store option midlevel
+    -Overlay distance to next level, amount of coins on all levels and store
+    -Found and cut up sprite sheets for first level
+    -Tasks for next time:
+        -All: Look for Sprites for your level
+        -Niels: Look for tutorials to help with Unity development
+        -Annika: Look for a way to use GitHub with Unity
+
+3-30-18
+    -Meeting time from 9-10am in Leep2 study room
+    -Team members in attendance: Natalie, Annika, Niels, and Ron
+    -Finalized assigned levels:
+        -Store: Natalie
+        -Level 1: Niels 
+        -Level 2: Ron
+        -Level 3: Annika
+    -Discussed different tutorials to refer to for help
+    -Discussed how to use Git/GitHub with our Project: GitHub Desktop App
+    -Tasks for next time: 
+        -Natalie: Work on the store
+        -Niels: Work on Level 1
+        -Ron: Work on Level 2
+        -Annika: Work on Level 3
+
+4-2-18
+    -Meeting time from 9-10am in Leep2 study room
+    -Team members in attendance: Natalie, Annika, Niels, and Ron
+    -Met together and worked individually on our own parts
+    -Did not discuss anything new
+    -Tasks for next time: 
+        -All: Continue to work on individual levels
+
+4-4-18
+    -Meeting time from 9-10am in Leep2 study room
+    -Team members in attendance: Natalie, Annika, Niels, and Ron
+    -Does the game need the ability to pause? No, not for the prototype at least
+    -Does the game need the ability to restart? Yes. Niels will work on implementing this
+    -Discussed keybindings for powerups
+    -Discussed a possible help menu overlay (for the final product)
+    -Decided to only overlay coins on screen, not distance
+    -Decided to add basic enemies
+    -Tasks for next time:
+        -All: continue to work on individual levels
+        -Natalie: Research ways to switch between levels
+
+4-5-18
+    -Meeting time from 12:30-2:20pm in Eaton 1005D
+    -Team members in attendance: Natalie, Annika, Niels, and Ron (for the first 15 minutes)
+    -Store needs from others:
+        -Global coins counter variable to display number of coins over the store (as well as other levels)
+        -Global booleans to indicate possession of powerups
+        -Name of individual levels to allow proper switching of levels
+    -Will combine store dinosaur with level dinosaur to have only one dino across the entire game
+    -A method was found to switch between scenes and was shared with the group
+    -Tasks for next time:
+        -All: continue to work on individual levels
+
+4-6-18
+    -Meeting time from 9-10am in Leep2 study room
+    -Team members in attendance: Natalie and Ron
+    -Worked individually on our own parts
+    -Did not discuss anything new
+    -Tasks for next time:
+        -All: Have levels finalized by Saturday night so integration can begin on Sunday
+            -This was communicated via GroupMe to missing group members 
+
+4-8-18
+    -Meeting time from 4-12pm on Google Hangouts
+    -Team members in attendance: Natalie, Annika, and Niels
+    -Worked to integrate all levels
+    -Worked on bug fixes
+    -Worked on finishing project artifacts up
+    -Worked on Documentation
+    -Meeting log finished and ready for upload and final prototype project will be pushed to GitHub after this final statement
+
+
+
