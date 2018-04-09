@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['readbaseconfig',['readBaseConfig',['../class_doxygen_window.html#a5ba38d9b1d93fa627bc3b53cdd1dda17',1,'DoxygenWindow']]],
-  ['readfulllog',['ReadFullLog',['../class_doxy_thread_safe_output.html#a40486922d565c2b83934fd8e863bf843',1,'DoxyThreadSafeOutput']]],
-  ['readline',['ReadLine',['../class_doxy_thread_safe_output.html#a84958c6ebe8de10ced504bf5f2fde015',1,'DoxyThreadSafeOutput']]],
-  ['run',['Run',['../class_doxy_runner.html#a7458975df0c43d397051f225d6def184',1,'DoxyRunner']]],
-  ['rundoxygen',['RunDoxygen',['../class_doxygen_window.html#a63924417d5b5b7a71570ec9a9ef1ca5e',1,'DoxygenWindow']]],
-  ['runthreadeddoxy',['RunThreadedDoxy',['../class_doxy_runner.html#a0a838402bf7b6661d4a1959c1b57aeb6',1,'DoxyRunner']]]
+  ['oncollisionenter2d',['OnCollisionEnter2D',['../class_player_move_script.html#a8d3c907fde16da04a13247c15bd0ceb3',1,'PlayerMoveScript.OnCollisionEnter2D()'],['../class_player_score.html#ad1315b302bd2fd49ae5a8dfbba19c6f3',1,'PlayerScore.OnCollisionEnter2D()']]],
+  ['oncompletecallback',['onCompleteCallBack',['../class_doxy_runner.html#ac1401822d6b3dea5626b786a94aa98d5',1,'DoxyRunner']]],
+  ['ondoxygenfinished',['OnDoxygenFinished',['../class_doxygen_window.html#a2809a93b756a6cfc371ee76a9d7168d7',1,'DoxygenWindow']]],
+  ['ongui',['OnGUI',['../class_player_score.html#a912c3583255298b32edcba4ee693dbdb',1,'PlayerScore']]],
+  ['ontriggerenter2d',['OnTriggerEnter2D',['../class_player_health.html#a9170f342d041b29c5f91d17162be21a9',1,'PlayerHealth.OnTriggerEnter2D()'],['../class_player_score.html#aacbeffdf66e43d6811acc60144210a6d',1,'PlayerScore.OnTriggerEnter2D()']]],
+  ['ontriggerexit2d',['OnTriggerExit2D',['../class_player_score.html#ae6ca77c68bebafbf94edf4e59f4221a7',1,'PlayerScore']]]
 ];

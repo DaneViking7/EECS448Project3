@@ -1,12 +1,15 @@
 var searchData=
 [
-  ['scriptsdirectory',['ScriptsDirectory',['../class_doxygen_config.html#aea53b2e7fc0f47a7f658ce25e65c4a09',1,'DoxygenConfig']]],
-  ['selectedtheme',['SelectedTheme',['../class_doxygen_window.html#aff9bfc8c7ed3f017a61e67025ea7c99a',1,'DoxygenWindow']]],
-  ['setfinished',['SetFinished',['../class_doxy_thread_safe_output.html#a97e2149569e2bb5e749851daa2781423',1,'DoxyThreadSafeOutput']]],
-  ['setstarted',['SetStarted',['../class_doxy_thread_safe_output.html#ad08186c77f145bc3cb1ddb50259ef589',1,'DoxyThreadSafeOutput']]],
-  ['store_5fcoins',['Store_Coins',['../class_store___coins.html',1,'']]],
-  ['store_5fcoins_2ecs',['Store_Coins.cs',['../_store___coins_8cs.html',1,'']]],
-  ['storecamerasystem',['StoreCameraSystem',['../class_store_camera_system.html',1,'']]],
-  ['storecamerasystem_2ecs',['StoreCameraSystem.cs',['../_store_camera_system_8cs.html',1,'']]],
-  ['synopsis',['Synopsis',['../class_doxygen_config.html#a2b1926144ba2768c36de32a8d3445567',1,'DoxygenConfig']]]
+  ['pathtodoxygen',['PathtoDoxygen',['../class_doxygen_config.html#ad308ed1d0bdb202587fba232b754929f',1,'DoxygenConfig']]],
+  ['player',['player',['../class_store_camera_system.html#a50c6d97f1fcd687d6101ee0acded5929',1,'StoreCameraSystem.player()'],['../class_camera_system.html#a33940e527c11b633356ff5498f62c293',1,'CameraSystem.player()']]],
+  ['playerhealth',['PlayerHealth',['../class_player_health.html',1,'']]],
+  ['playerhealth_2ecs',['PlayerHealth.cs',['../_player_health_8cs.html',1,'']]],
+  ['playerjumppower',['playerJumpPower',['../class_player_move_script.html#a71b3aea4c7817e538141568b49f0acd4',1,'PlayerMoveScript']]],
+  ['playermove',['PlayerMove',['../class_player_move_script.html#a2305f760d2b2ce05ae28bcadfdf7515d',1,'PlayerMoveScript']]],
+  ['playermovescript',['PlayerMoveScript',['../class_player_move_script.html',1,'']]],
+  ['playermovescript_2ecs',['PlayerMoveScript.cs',['../_player_move_script_8cs.html',1,'']]],
+  ['playerscore',['PlayerScore',['../class_player_score.html',1,'']]],
+  ['playerscore_2ecs',['PlayerScore.cs',['../_player_score_8cs.html',1,'']]],
+  ['playerspeed',['playerSpeed',['../class_player_move_script.html#ae88d210e4c5c2e8d2eb27e1b19498c8f',1,'PlayerMoveScript']]],
+  ['project',['Project',['../class_doxygen_config.html#ae69318495ba1db9f3a4d88e01764f9b4',1,'DoxygenConfig']]]
 ];

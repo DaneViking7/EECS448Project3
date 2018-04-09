@@ -6,16 +6,16 @@ using UnityEngine.SceneManagement;
 public class PlayerMoveScript : MonoBehaviour {
 
     public int playerSpeed = 10;
-    private int playerJumpPower = 1250;
-    public float moveX;
-    private bool isGrounded;
+	private int playerJumpPower = 1250;
+	public float moveX;
+	private bool isGrounded;
 
 	// Update is called once per frame
 	void Update () {
         PlayerMove();
 	}
 
-    void PlayerMove()
+	void PlayerMove()
     {
         moveX = Input.GetAxis("Horizontal");
         if(Input.GetButtonDown("Jump") && isGrounded == true)
@@ -45,13 +45,13 @@ public class PlayerMoveScript : MonoBehaviour {
         }
     }
 
-    void Jump()
+	void Jump()
     {
         GetComponent<Rigidbody2D>().AddForce (Vector2.up * playerJumpPower);
         isGrounded = false;
     }
 
-   private void OnCollisionEnter2D(Collision2D col)
+	private void OnCollisionEnter2D(Collision2D col)
     {
         if (col.gameObject.tag == "ground")
             isGrounded = true;

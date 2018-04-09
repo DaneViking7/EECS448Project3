@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['version',['Version',['../class_doxygen_config.html#af72cbcc553de9766a100f77f90c35626',1,'DoxygenConfig']]]
+  ['themes',['Themes',['../class_doxygen_window.html#a2dfb0ba26737a0e996797c2848cc2fc0',1,'DoxygenWindow']]],
+  ['timer',['Timer',['../class_player_score.html#a8b25664511ca051562b2d8af3db46be4',1,'PlayerScore']]]
 ];

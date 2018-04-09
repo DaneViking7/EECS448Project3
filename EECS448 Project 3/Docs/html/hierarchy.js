@@ -12,7 +12,6 @@ var hierarchy =
       [ "PlayerHealth", "class_player_health.html", null ],
       [ "PlayerMoveScript", "class_player_move_script.html", null ],
       [ "PlayerScore", "class_player_score.html", null ],
-      [ "Store_Coins", "class_store___coins.html", null ],
       [ "StoreCameraSystem", "class_store_camera_system.html", null ]
     ] ]
 ];

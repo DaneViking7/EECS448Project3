@@ -6,23 +6,23 @@ using UnityEngine.SceneManagement;
 
 public class PlayerScore : MonoBehaviour {
 
-    private int coinCount = 0; //!< number of coins the dino has earned
+	private int coinCount = 0; //!< number of coins the dino has earned
     public GameObject canvas; //!< canvas to display number of coins at the top
     public GameObject coinCountUI; //!< object to display number of coins at the top
-    private bool moonshoes = false;
-    private bool mini = false;
-    private int lvl = 1; //!< counter to count number of times the Dino has entered the store
-    private const int eggCost = 15; //!< the cost of an Egg powerup
-    private const int moonBootsCost = 20; //!< the cost of a Moon Boots
-    private bool displayExit = false; //!< boolean to enable/disable the Exit GUI menu
-    private bool displayNotEnoughCoins = false; //!< boolean to enable/disable the Not Enough Coins GUI
+	private bool moonshoes = false; //!< boolean to indicate possession of moon shoes
+	private bool mini = false; //!< boolean to indicate possession of egg
+	private int lvl = 1; //!< counter to count number of times the Dino has entered the store
+	private const int eggCost = 15; //!< the cost of an Egg powerup
+	private const int moonBootsCost = 20; //!< the cost of a Moon Boots
+	private bool displayExit = false; //!< boolean to enable/disable the Exit GUI menu
+	private bool displayNotEnoughCoins = false; //!< boolean to enable/disable the Not Enough Coins GUI
 
     // Update is called once per frame
-    void Update () {
+	void Update () {
         coinCountUI.gameObject.GetComponent<Text>().text = ("Coins: " + coinCount);
 	}
 
-    private void OnTriggerEnter2D(Collider2D trig)
+	private void OnTriggerEnter2D(Collider2D trig)
     {
         if(trig.gameObject.tag == "lvlend")
         {
@@ -70,12 +70,12 @@ public class PlayerScore : MonoBehaviour {
     }
 
     //! start a timer for the GUI when dino falls from powerup
-    void OnTriggerExit2D(Collider2D trig)
+	void OnTriggerExit2D(Collider2D trig)
     {
         StartCoroutine(Timer());
     }
 
-    void OnCollisionEnter2D(Collision2D col)
+	void OnCollisionEnter2D(Collision2D col)
     {
         if (col.gameObject.name == "door")
         {
@@ -84,7 +84,7 @@ public class PlayerScore : MonoBehaviour {
     }
 
     //! Display GUIs based on collisions with game objects
-    void OnGUI()
+	void OnGUI()
     {
         // if dino collided with door, display exit GUI
         if (displayExit)
@@ -117,7 +117,7 @@ public class PlayerScore : MonoBehaviour {
     }
 
     //! Timer for displaying powerup GUI
-    IEnumerator Timer()
+	IEnumerator Timer()
     {
         yield return new WaitForSecondsRealtime(1);
         displayNotEnoughCoins = false;

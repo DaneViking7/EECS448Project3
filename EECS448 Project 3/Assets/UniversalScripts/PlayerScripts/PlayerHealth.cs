@@ -6,16 +6,16 @@ using UnityEngine.SceneManagement;
 public class PlayerHealth : MonoBehaviour
 {
 
-    private bool dead;
-    public GameObject canvas;
+	private bool dead; //!< boolean to indicate whether or not player died
+    public GameObject canvas; //!< object to display number of coins on the screen
     // Use this for initialization
-    void Start()
+	void Start()
     {
         dead = false;
     }
 
     // Update is called once per frame
-    void Update()
+	void Update()
     {
         if (dead == true)
         {
@@ -24,14 +24,14 @@ public class PlayerHealth : MonoBehaviour
 
     }
 
-    void Die()
+	void Die()
     {
         Destroy(this.gameObject);
         Destroy(canvas);
         SceneManager.LoadScene("Level 1", LoadSceneMode.Single);
     }
 
-    private void OnTriggerEnter2D(Collider2D col)
+	private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.tag == "Kill Object")
             dead = true;

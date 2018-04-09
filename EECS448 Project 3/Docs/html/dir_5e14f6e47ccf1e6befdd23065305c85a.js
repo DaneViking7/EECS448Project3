@@ -5,6 +5,6 @@ var dir_5e14f6e47ccf1e6befdd23065305c85a =
       [ "CameraSystem", "class_camera_system.html", "class_camera_system" ]
     ] ],
     [ "EnemyMove.cs", "_enemy_move_8cs.html", [
-      [ "EnemyMove", "class_enemy_move.html", null ]
+      [ "EnemyMove", "class_enemy_move.html", "class_enemy_move" ]
     ] ]
 ];
