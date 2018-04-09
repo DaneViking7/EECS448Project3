@@ -6,12 +6,16 @@ using UnityEngine.SceneManagement;
 
 public class PlayerScore : MonoBehaviour {
 
-    private int coinCount = 0;
-    public GameObject canvas;
-    public GameObject coinCountUI;
+    private int coinCount = 0; //!< number of coins the dino has earned
+    public GameObject canvas; //!< canvas to display number of coins at the top
+    public GameObject coinCountUI; //!< object to display number of coins at the top
     private bool moonshoes = false;
     private bool mini = false;
-    private int lvl = 1;
+    private int lvl = 1; //!< counter to count number of times the Dino has entered the store
+    private const int eggCost = 15; //!< the cost of an Egg powerup
+    private const int moonBootsCost = 20; //!< the cost of a Moon Boots
+    private bool displayExit = false; //!< boolean to enable/disable the Exit GUI menu
+    private bool displayNotEnoughCoins = false; //!< boolean to enable/disable the Not Enough Coins GUI
 
     // Update is called once per frame
     void Update () {
@@ -24,28 +28,98 @@ public class PlayerScore : MonoBehaviour {
         {
             DontDestroyOnLoad(this.gameObject);
             DontDestroyOnLoad(canvas);
-            if (SceneManager.GetActiveScene().name != "Store")
-            {
-                lvl++;
-                transform.position = new Vector2(-8.06f, -3.956429f);
-                SceneManager.LoadScene("Level 2", LoadSceneMode.Single);
-            }
-            else
-            {
-                if (lvl == 2)
-                {
-                    SceneManager.LoadScene("Level 2", LoadSceneMode.Single);
-                }
-                else if (lvl == 3)
-                {
-                    SceneManager.LoadScene("Level3", LoadSceneMode.Single);
-                }
-            }
+            lvl++;
+            transform.position = new Vector2(-8.06f, -3.956429f);
+            SceneManager.LoadScene("Store", LoadSceneMode.Single);
         }
         if(trig.gameObject.tag == "coin")
         {
             coinCount++;
             Destroy(trig.gameObject);
         }
+        // If dino collides with egg
+        if (trig.gameObject.name == "Egg")
+        {
+            // If dino has enough coins
+            if (coinCount >= eggCost)
+            {
+                coinCount -= eggCost;
+                Destroy(trig.gameObject);
+                mini = true;
+            }
+            else
+            { // if dino doesn't have enough coins
+                displayNotEnoughCoins = true;
+            }
+        }
+        // If dino collides with moon boots
+        if (trig.gameObject.name == "MoonBoots")
+        {
+            // If dino has enough coins
+            if (coinCount >= moonBootsCost)
+            {
+                coinCount -= moonBootsCost;
+                Destroy(trig.gameObject);
+                moonshoes = true;
+            }
+            else
+            { // if dino doesn't have enough coins
+                displayNotEnoughCoins = true;
+            }
+        }
+    }
+
+    //! start a timer for the GUI when dino falls from powerup
+    void OnTriggerExit2D(Collider2D trig)
+    {
+        StartCoroutine(Timer());
+    }
+
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.name == "door")
+        {
+            displayExit = true;
+        }
+    }
+
+    //! Display GUIs based on collisions with game objects
+    void OnGUI()
+    {
+        // if dino collided with door, display exit GUI
+        if (displayExit)
+        {
+            GUI.Box(new Rect(50, 37, 200, 46), "Are you sure you want to exit?");
+            if (GUI.Button(new Rect(60, 59, 80, 20), "Yes"))
+            {
+                if (lvl == 2)
+                {
+                    SceneManager.LoadScene("Level 2", LoadSceneMode.Single);
+                    transform.position = new Vector2(-5.72f, -3.14f);
+                }
+                if (lvl == 3)
+                {
+                    SceneManager.LoadScene("Level3", LoadSceneMode.Single);
+                    transform.position = new Vector2(-8.06f, -3.956429f);
+                }
+                displayExit = false;
+            }
+            if (GUI.Button(new Rect(160, 59, 80, 20), "No"))
+            {
+                displayExit = false;
+            }
+        }
+        // if collided with a power up but doesn't have enpough money, display coin GUI
+        if (displayNotEnoughCoins)
+        {
+            GUI.Box(new Rect(50, 50, 200, 25), "You dont have enough coins!");
+        }
+    }
+
+    //! Timer for displaying powerup GUI
+    IEnumerator Timer()
+    {
+        yield return new WaitForSecondsRealtime(1);
+        displayNotEnoughCoins = false;
     }
 }

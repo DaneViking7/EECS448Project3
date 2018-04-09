@@ -61,7 +61,7 @@ public class Store_Coins : MonoBehaviour {
 
 	//! Display GUIs based on collisions with game objects
 	void OnGUI () {
-		// if dino collided with dooe, display exit GUI
+		// if dino collided with door, display exit GUI
 		if (displayExit) {
 			GUI.Box (new Rect (50, 37, 200, 46), "Are you sure you want to exit?");
 			if (GUI.Button (new Rect (60, 59, 80, 20), "Yes")) {
