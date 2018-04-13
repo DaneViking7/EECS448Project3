@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
-
+    public bool godMode;
 	private bool dead; //!< boolean to indicate whether or not player died
     public GameObject canvas; //!< object to display number of coins on the screen
     // Use this for initialization
@@ -17,7 +17,7 @@ public class PlayerHealth : MonoBehaviour
     // Update is called once per frame
 	void Update()
     {
-        if (dead == true)
+        if (dead == true && !godMode)
         {
             Die();
         }
