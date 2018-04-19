@@ -23,9 +23,18 @@ public class CameraSystem : MonoBehaviour
     {
         if (player != null)
         {
-            float x = Mathf.Clamp(player.transform.position.x + 8, xMin, xMax);
-            float y = Mathf.Clamp(player.transform.position.y, yMin, yMax);
-            gameObject.transform.position = new Vector3(x, y, gameObject.transform.position.z);
+            if (SceneManager.GetActiveScene().name == "Store")
+            {
+                float x = Mathf.Clamp(player.transform.position.x, xMin, xMax);
+                float y = Mathf.Clamp(player.transform.position.y, yMin, yMax);
+                gameObject.transform.position = new Vector3(x, y, gameObject.transform.position.z);
+            }
+            else
+            {
+                float x = Mathf.Clamp(player.transform.position.x + 8, xMin, xMax);
+                float y = Mathf.Clamp(player.transform.position.y, yMin, yMax);
+                gameObject.transform.position = new Vector3(x, y, gameObject.transform.position.z);
+            }
         }
     }
 }
