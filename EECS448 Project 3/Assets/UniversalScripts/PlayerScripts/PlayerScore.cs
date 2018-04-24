@@ -11,9 +11,15 @@ public class PlayerScore : MonoBehaviour {
     public GameObject coinCountUI; //!< object to display number of coins at the top
 	private bool moonshoes = false; //!< boolean to indicate possession of moon shoes
 	private bool mini = false; //!< boolean to indicate possession of egg
+	private bool heart = false; //!< boolean to indicate possession of heart
+	private bool aerosolCan = false; //!< boolean to indicate possession of aerosol can
+	private bool jetPack = false; //!< boolean to indicate possession of jetPack
 	private int lvl = 1; //!< counter to count number of times the Dino has entered the store
-	private const int eggCost = 15; //!< the cost of an Egg powerup
-	private const int moonBootsCost = 20; //!< the cost of a Moon Boots
+	private const int eggCost = 5; //!< the cost of an Egg powerup
+	private const int moonBootsCost = 10; //!< the cost of a Moon Boots powerup
+	private const int heartCost = 25; //!< the cost of a Heart powerup
+	private const int aerosolCanCost = 15; //!< the cost of an Aerosol Can powerup
+	private const int jetPackCost = 20; //!< the cost of a Jet Pack powerup
 	private bool displayExit = false; //!< boolean to enable/disable the Exit GUI menu
 	private bool displayNotEnoughCoins = false; //!< boolean to enable/disable the Not Enough Coins GUI
 
@@ -67,6 +73,51 @@ public class PlayerScore : MonoBehaviour {
                 displayNotEnoughCoins = true;
             }
         }
+		// If dino collides with heart
+		if (trig.gameObject.name == "Heart")
+		{
+			// If dino has enough coins
+			if (coinCount >= heartCost)
+			{
+				coinCount -= heartCost;
+				Destroy(trig.gameObject);
+				heart = true;
+			}
+			else
+			{ // if dino doesn't have enough coins
+				displayNotEnoughCoins = true;
+			}
+		}
+		// If dino collides with aerosol can
+		if (trig.gameObject.name == "Aerosol")
+		{
+			// If dino has enough coins
+			if (coinCount >= aerosolCanCost)
+			{
+				coinCount -= aerosolCanCost;
+				Destroy(trig.gameObject);
+				aerosolCan = true;
+			}
+			else
+			{ // if dino doesn't have enough coins
+				displayNotEnoughCoins = true;
+			}
+		}
+		// If dino collides with aerosol can
+		if (trig.gameObject.name == "JetPack")
+		{
+			// If dino has enough coins
+			if (coinCount >= jetPackCost)
+			{
+				coinCount -= jetPackCost;
+				Destroy(trig.gameObject);
+				jetPack = true;
+			}
+			else
+			{ // if dino doesn't have enough coins
+				displayNotEnoughCoins = true;
+			}
+		}
     }
 
     //! start a timer for the GUI when dino falls from powerup
