@@ -303,6 +303,7 @@ GameObject:
   - component: {fileID: 136057616}
   - component: {fileID: 136057618}
   - component: {fileID: 136057617}
+  - component: {fileID: 136057619}
   m_Layer: 5
   m_Name: Pause Menu
   m_TagString: Untagged
@@ -343,7 +344,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.391}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -364,6 +365,23 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 136057615}
+--- !u!95 &136057619
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 136057615}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5a482b728b6f95945b0bbfa97127f82a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 2
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &139271388
 GameObject:
   m_ObjectHideFlags: 0
@@ -3084,6 +3102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 387c98197d5bced49a9ae5fd98f43155, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  resumeAnimation: {fileID: 0}
   pauseMenuUI: {fileID: 136057615}
 --- !u!1 &1478095262
 GameObject:
@@ -3167,6 +3186,17 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

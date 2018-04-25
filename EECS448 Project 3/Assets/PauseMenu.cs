@@ -58,12 +58,13 @@ public class PauseMenu : MonoBehaviour {
 
     public void LoadGameMenu()
     {
-
+        //Time.timeScale = 1f;
+        Debug.Log("Not yet implemented.");
     }
 
     public void QuitGame()
     {
-
+        Application.Quit();
     }
 	
 }
