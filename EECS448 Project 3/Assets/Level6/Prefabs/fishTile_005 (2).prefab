@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212340919640190472}
   m_Layer: 0
   m_Name: fishTile_005 (2)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
