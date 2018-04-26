@@ -7054,7 +7054,7 @@ GameObject:
   - component: {fileID: 1067813624}
   m_Layer: 0
   m_Name: GameObject (10)
-  m_TagString: ground
+  m_TagString: Kill Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7953,7 +7953,7 @@ GameObject:
   - component: {fileID: 1261322148}
   m_Layer: 0
   m_Name: GameObject (4)
-  m_TagString: Untagged
+  m_TagString: Kill Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
