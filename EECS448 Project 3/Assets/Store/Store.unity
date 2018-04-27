@@ -1120,7 +1120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e02774a8fa02e2479759c533ec30059, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xMin: 0
+  xMin: -20
   xMax: 1
   yMin: 0
   yMax: 0
@@ -6963,7 +6963,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1275593676
 Prefab:
@@ -7002,7 +7002,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4267490167407432, guid: faab5fae08ba85c42bd40001226c491f, type: 2}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 212981347515171100, guid: faab5fae08ba85c42bd40001226c491f,
         type: 2}
@@ -9688,7 +9688,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4787301541005058, guid: 584606a722732f24d8650cf2d6faba32, type: 2}
       propertyPath: m_RootOrder
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 4787301541005058, guid: 584606a722732f24d8650cf2d6faba32, type: 2}
       propertyPath: m_LocalScale.y
@@ -10513,7 +10513,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1899701931
 GameObject:

@@ -9,11 +9,6 @@ public class PlayerScore : MonoBehaviour {
 	private int coinCount = 0; //!< number of coins the dino has earned
     public GameObject canvas; //!< canvas to display number of coins at the top
     public GameObject coinCountUI; //!< object to display number of coins at the top
-	private bool moonshoes = false; //!< boolean to indicate possession of moon shoes
-	private bool mini = false; //!< boolean to indicate possession of egg
-	private bool heart = false; //!< boolean to indicate possession of heart
-	private bool aerosolCan = false; //!< boolean to indicate possession of aerosol can
-	private bool jetPack = false; //!< boolean to indicate possession of jetPack
 	private int lvl = 1; //!< counter to count number of times the Dino has entered the store
 	private const int eggCost = 5; //!< the cost of an Egg powerup
 	private const int moonBootsCost = 10; //!< the cost of a Moon Boots powerup
@@ -35,7 +30,7 @@ public class PlayerScore : MonoBehaviour {
             DontDestroyOnLoad(this.gameObject);
             DontDestroyOnLoad(canvas);
             lvl++;
-            transform.position = new Vector2(-8.06f, -3.956429f);
+			transform.position = new Vector2(-26.27172f, -3.956429f);
             SceneManager.LoadScene("Store", LoadSceneMode.Single);
         }
         if(trig.gameObject.tag == "coin")
@@ -51,7 +46,6 @@ public class PlayerScore : MonoBehaviour {
             {
                 coinCount -= eggCost;
                 Destroy(trig.gameObject);
-                mini = true;
             }
             else
             { // if dino doesn't have enough coins
@@ -66,7 +60,6 @@ public class PlayerScore : MonoBehaviour {
             {
                 coinCount -= moonBootsCost;
                 Destroy(trig.gameObject);
-                moonshoes = true;
             }
             else
             { // if dino doesn't have enough coins
@@ -81,7 +74,6 @@ public class PlayerScore : MonoBehaviour {
 			{
 				coinCount -= heartCost;
 				Destroy(trig.gameObject);
-				heart = true;
 			}
 			else
 			{ // if dino doesn't have enough coins
@@ -96,7 +88,6 @@ public class PlayerScore : MonoBehaviour {
 			{
 				coinCount -= aerosolCanCost;
 				Destroy(trig.gameObject);
-				aerosolCan = true;
 			}
 			else
 			{ // if dino doesn't have enough coins
@@ -111,7 +102,6 @@ public class PlayerScore : MonoBehaviour {
 			{
 				coinCount -= jetPackCost;
 				Destroy(trig.gameObject);
-				jetPack = true;
 			}
 			else
 			{ // if dino doesn't have enough coins

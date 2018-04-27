@@ -7,6 +7,8 @@ public class PlayerMoveScript : MonoBehaviour {
 
     public int playerSpeed = 10;
 	private int playerJumpPower = 1250;
+	private int jumpsRem = 2;
+	private bool moonBoots = false; //!< boolean to indicate possession of moon shoes
 	public float moveX;
 	private bool isGrounded;
 
@@ -37,6 +39,7 @@ public class PlayerMoveScript : MonoBehaviour {
         }
         else
         {
+			GetComponent<SpriteRenderer>().flipX = false;
             gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(playerSpeed, gameObject.GetComponent<Rigidbody2D>().velocity.y);
             if(isGrounded == true)
                 GetComponent<Animator>().SetBool("IsRunning", true);
@@ -48,12 +51,34 @@ public class PlayerMoveScript : MonoBehaviour {
 	void Jump()
     {
         GetComponent<Rigidbody2D>().AddForce (Vector2.up * playerJumpPower);
-        isGrounded = false;
+		if (moonBoots == true) 
+		{
+			jumpsRem--;
+			if (jumpsRem == 0)
+				isGrounded = false;
+		}
+		else
+        	isGrounded = false;
     }
 
 	private void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.tag == "ground")
-            isGrounded = true;
+		if (col.gameObject.tag == "ground")
+		{
+			isGrounded = true;
+			jumpsRem = 2;
+		}
     }
+
+	private void OnTriggerEnter2D(Collider2D trig)
+	{
+		if (trig.gameObject.name == "MoonBoots")
+		{
+			moonBoots = true;
+		}
+		if(trig.gameObject.tag == "lvlend")
+		{
+			moonBoots = false;
+		}
+	}
 }
