@@ -10,6 +10,11 @@ public class PlayerScore : MonoBehaviour {
     public GameObject canvas; //!< canvas to display number of coins at the top
     public GameObject coinCountUI; //!< object to display number of coins at the top
 	private int lvl = 1; //!< counter to count number of times the Dino has entered the store
+	public bool aerosol = false; //!< boolean to indicate possession of aerosol can
+	public GameObject fireball;
+	public bool heart = false;
+	public bool moonBoots = false; //!< boolean to indicate possession of moon shoes
+	public bool jetPack = false;
 	private const int eggCost = 5; //!< the cost of an Egg powerup
 	private const int moonBootsCost = 10; //!< the cost of a Moon Boots powerup
 	private const int heartCost = 25; //!< the cost of a Heart powerup
@@ -17,10 +22,21 @@ public class PlayerScore : MonoBehaviour {
 	private const int jetPackCost = 20; //!< the cost of a Jet Pack powerup
 	private bool displayExit = false; //!< boolean to enable/disable the Exit GUI menu
 	private bool displayNotEnoughCoins = false; //!< boolean to enable/disable the Not Enough Coins GUI
+	private bool offCd = true;
 
     // Update is called once per frame
 	void Update () {
         coinCountUI.gameObject.GetComponent<Text>().text = ("Coins: " + coinCount);
+		if (aerosol == true)
+		{
+			if (Input.GetKeyDown ("space") && offCd == true)
+			{
+				offCd = false;
+				GameObject clone;
+				clone = Instantiate (fireball, this.transform.position, this.transform.rotation);
+				StartCoroutine (Timer2 ());
+			}
+		}
 	}
 
 	private void OnTriggerEnter2D(Collider2D trig)
@@ -29,6 +45,11 @@ public class PlayerScore : MonoBehaviour {
         {
             DontDestroyOnLoad(this.gameObject);
             DontDestroyOnLoad(canvas);
+			this.gameObject.transform.localScale = new Vector2(1.75f, 1.75f);
+			aerosol = false;
+			moonBoots = false;
+			heart = false;
+			jetPack = false;
             lvl++;
 			transform.position = new Vector2(-26.27172f, -3.956429f);
             SceneManager.LoadScene("Store", LoadSceneMode.Single);
@@ -45,6 +66,7 @@ public class PlayerScore : MonoBehaviour {
             if (coinCount >= eggCost)
             {
                 coinCount -= eggCost;
+				this.gameObject.transform.localScale = new Vector2(1, 1);
                 Destroy(trig.gameObject);
             }
             else
@@ -59,6 +81,7 @@ public class PlayerScore : MonoBehaviour {
             if (coinCount >= moonBootsCost)
             {
                 coinCount -= moonBootsCost;
+				moonBoots = true;
                 Destroy(trig.gameObject);
             }
             else
@@ -73,6 +96,7 @@ public class PlayerScore : MonoBehaviour {
 			if (coinCount >= heartCost)
 			{
 				coinCount -= heartCost;
+				heart = true;
 				Destroy(trig.gameObject);
 			}
 			else
@@ -87,6 +111,7 @@ public class PlayerScore : MonoBehaviour {
 			if (coinCount >= aerosolCanCost)
 			{
 				coinCount -= aerosolCanCost;
+				aerosol = true;
 				Destroy(trig.gameObject);
 			}
 			else
@@ -101,6 +126,7 @@ public class PlayerScore : MonoBehaviour {
 			if (coinCount >= jetPackCost)
 			{
 				coinCount -= jetPackCost;
+				jetPack = true;
 				Destroy(trig.gameObject);
 			}
 			else
@@ -163,4 +189,11 @@ public class PlayerScore : MonoBehaviour {
         yield return new WaitForSecondsRealtime(1);
         displayNotEnoughCoins = false;
     }
+
+	//! Timer for fireball cooldown
+	IEnumerator Timer2()
+	{
+		yield return new WaitForSecondsRealtime(2);
+		offCd = true;
+	}
 }

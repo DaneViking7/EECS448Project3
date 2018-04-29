@@ -5,16 +5,28 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMoveScript : MonoBehaviour {
 
+	GameObject Dino;
+	PlayerScore targetScript;
     public int playerSpeed = 10;
+	private bool moonBoots = false;
 	private int playerJumpPower = 1250;
 	private int jumpsRem = 2;
-	private bool moonBoots = false; //!< boolean to indicate possession of moon shoes
 	public float moveX;
 	private bool isGrounded;
+
+	void Start()
+	{
+		Dino = GameObject.Find("Dino");
+		targetScript  = Dino.GetComponent<PlayerScore>();
+	}
 
 	// Update is called once per frame
 	void Update () {
         PlayerMove();
+		if (targetScript.jetPack == true)
+			playerJumpPower = 2000;
+		if (targetScript.moonBoots == true)
+			moonBoots = true;
 	}
 
 	void PlayerMove()
@@ -72,13 +84,10 @@ public class PlayerMoveScript : MonoBehaviour {
 
 	private void OnTriggerEnter2D(Collider2D trig)
 	{
-		if (trig.gameObject.name == "MoonBoots")
-		{
-			moonBoots = true;
-		}
 		if(trig.gameObject.tag == "lvlend")
 		{
 			moonBoots = false;
+			playerJumpPower = 1250;
 		}
 	}
 }

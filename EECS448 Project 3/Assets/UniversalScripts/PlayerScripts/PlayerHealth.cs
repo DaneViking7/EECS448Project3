@@ -6,7 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
-
+	GameObject Dino;
+	PlayerScore targetScript;
+	private bool heart;
 	private bool dead; //!< boolean to indicate whether or not player died
     public GameObject canvas; //!< object to display number of coins on the screen
 	public GameObject livesCountUI;
@@ -15,6 +17,8 @@ public class PlayerHealth : MonoBehaviour
     // Use this for initialization
 	void Start()
     {
+		Dino = GameObject.Find("Dino");
+		targetScript  = Dino.GetComponent<PlayerScore>();
         dead = false;
 		lives = 3;
 		invincible = false;
@@ -23,6 +27,13 @@ public class PlayerHealth : MonoBehaviour
     // Update is called once per frame
 	void Update()
     {
+		heart = targetScript.heart;
+		if (heart == true)
+		{
+			lives++;
+			heart = false;
+			targetScript.heart = false;
+		}
 		livesCountUI.gameObject.GetComponent<Text>().text = ("Lives: " + lives);
 		if (lives == 0)
 			dead = true;
@@ -39,9 +50,7 @@ public class PlayerHealth : MonoBehaviour
 
 	private void OnTriggerEnter2D(Collider2D col)
     {
-		if (col.gameObject.tag == "Kill Object")
+		if (col.gameObject.tag == "Kill Object" && invincible == false)
 			lives--;
-		if (col.gameObject.name == "Heart")
-			lives++;
     }
 }
