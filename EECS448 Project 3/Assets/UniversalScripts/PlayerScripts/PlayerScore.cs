@@ -9,7 +9,7 @@ public class PlayerScore : MonoBehaviour {
 	public int coinCount = 0; //!< number of coins the dino has earned
     public GameObject canvas; //!< canvas to display number of coins at the top
     public GameObject coinCountUI; //!< object to display number of coins at the top
-	private int lvl = 1; //!< counter to count number of times the Dino has entered the store
+	public int lvl = 1; //!< counter to count number of times the Dino has entered the store
 	public bool aerosol = false; //!< boolean to indicate possession of aerosol can
 	public GameObject fireball;
 	public bool heart = false;

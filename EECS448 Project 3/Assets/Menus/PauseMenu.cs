@@ -26,7 +26,10 @@ public class PauseMenu : MonoBehaviour {
 
 
 	// Use this for initialization
-
+    void Awake()
+    {
+        DontDestroyOnLoad(pauseMenuUI.transform);
+    }
 	
 	// Update is called once per frame
 	void Update () 
@@ -64,9 +67,11 @@ public class PauseMenu : MonoBehaviour {
     {
         Debug.Log("Loading Game Menu");
         pScore.coinCount = 0;
-        pHealth.lives = 0;
+        pScore.lvl = 0;
+        pHealth.lives = 3;
         //gameObject.transform.Find("Lives").GetComponent<Text>().text = "Lives: 3";
-        SceneManager.LoadScene(0, LoadSceneMode.Single);
+        //SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene("Menu");
         pauseMenuUI.SetActive(false);
     }
 
