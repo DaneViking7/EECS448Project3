@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerScore : MonoBehaviour {
 
-	private int coinCount = 0; //!< number of coins the dino has earned
+	public int coinCount = 0; //!< number of coins the dino has earned
     public GameObject canvas; //!< canvas to display number of coins at the top
     public GameObject coinCountUI; //!< object to display number of coins at the top
 	private int lvl = 1; //!< counter to count number of times the Dino has entered the store

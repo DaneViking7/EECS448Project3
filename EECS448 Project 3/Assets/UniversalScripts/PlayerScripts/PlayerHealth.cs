@@ -15,7 +15,7 @@ public class PlayerHealth : MonoBehaviour
 	private bool dead; //!< boolean to indicate whether or not player died
     public GameObject canvas; //!< object to display number of coins on the screen
 	public GameObject livesCountUI;
-	private int lives;
+	public int lives;
 	bool invincible;
     // Use this for initialization
 	void Start()
