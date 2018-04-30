@@ -23,7 +23,7 @@ public class CameraSystem : MonoBehaviour
 	{
 		if (player != null)
 		{
-			if (SceneManager.GetActiveScene().name == "Store")
+			if (SceneManager.GetActiveScene().name == "Store" || SceneManager.GetActiveScene().name == "Test")
 			{
 				float x = Mathf.Clamp(player.transform.position.x, xMin, xMax);
 				float y = Mathf.Clamp(player.transform.position.y, yMin, yMax);

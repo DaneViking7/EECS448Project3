@@ -36,7 +36,7 @@ public class PlayerMoveScript : MonoBehaviour {
         {
             Jump();
         }
-        if (SceneManager.GetActiveScene().name == "Store")
+		if (SceneManager.GetActiveScene().name == "Store" || SceneManager.GetActiveScene().name == "Test")
         {
             if (moveX < 0.0f)
                 GetComponent<SpriteRenderer>().flipX = true;

@@ -15,6 +15,7 @@ public class PlayerHealth : MonoBehaviour
 	private bool dead; //!< boolean to indicate whether or not player died
     public GameObject canvas; //!< object to display number of coins on the screen
 	public GameObject livesCountUI;
+	public GameObject godModeUI;
 	private int lives;
 	bool invincible;
     // Use this for initialization
@@ -31,6 +32,13 @@ public class PlayerHealth : MonoBehaviour
     // Update is called once per frame
 	void Update()
     {
+		if (Input.GetKeyDown ("1") && SceneManager.GetActiveScene ().name == "Test")
+		{
+			if (invincible == false)
+				invincible = true;
+			else
+				invincible = false;
+		}
 		heart = targetScript.heart;
 		if (heart == true)
 		{
@@ -39,6 +47,13 @@ public class PlayerHealth : MonoBehaviour
 			targetScript.heart = false;
 		}
 		livesCountUI.gameObject.GetComponent<Text>().text = ("Lives: " + lives);
+		if(SceneManager.GetActiveScene ().name == "Test")
+		{
+			if (invincible == false)
+				godModeUI.gameObject.GetComponent<Text> ().text = ("God Mode: Off");
+			else
+				godModeUI.gameObject.GetComponent<Text> ().text = ("God Mode: On");
+		}
 		if (lives == 0)
 			dead = true;
         if (dead == true)
@@ -57,6 +72,10 @@ public class PlayerHealth : MonoBehaviour
 		if (col.gameObject.tag == "Kill Object" && invincible == false)
 		{
 			lives--;
+			if (SceneManager.GetActiveScene ().name == "Test")
+			{
+				transform.position = new Vector2(-8.06f, -3.95642f);
+			}
 			if (SceneManager.GetActiveScene ().name == "Level 1")
 			{
 				pt1.transform.position = new Vector2 (15.93f, 0.18f);
