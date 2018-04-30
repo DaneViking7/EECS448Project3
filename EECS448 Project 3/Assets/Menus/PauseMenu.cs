@@ -62,12 +62,12 @@ public class PauseMenu : MonoBehaviour {
 
     public void LoadGameMenu()
     {
-        Debug.Log("Not yet implemented.");
+        Debug.Log("Loading Game Menu");
         pScore.coinCount = 0;
         pHealth.lives = 0;
         //gameObject.transform.Find("Lives").GetComponent<Text>().text = "Lives: 3";
+        SceneManager.LoadScene(0, LoadSceneMode.Single);
         pauseMenuUI.SetActive(false);
-        SceneManager.LoadScene("Menu", LoadSceneMode.Single);
     }
 
     public void QuitGame()
