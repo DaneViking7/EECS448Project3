@@ -32,8 +32,7 @@ public class PlayerScore : MonoBehaviour {
 			if (Input.GetKeyDown ("space") && offCd == true)
 			{
 				offCd = false;
-				GameObject clone;
-				clone = Instantiate (fireball, this.transform.position, this.transform.rotation);
+				Instantiate (fireball, this.transform.position, this.transform.rotation);
 				StartCoroutine (Timer2 ());
 			}
 		}
