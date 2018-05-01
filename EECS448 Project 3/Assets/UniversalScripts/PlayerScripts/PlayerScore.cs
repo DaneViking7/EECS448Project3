@@ -66,16 +66,22 @@ public class PlayerScore : MonoBehaviour {
     {
         if(trig.gameObject.tag == "lvlend")
         {
-            DontDestroyOnLoad(this.gameObject);
-            DontDestroyOnLoad(canvas);
-			this.gameObject.transform.localScale = new Vector2(1.75f, 1.75f);
-			aerosol = false;
-			moonBoots = false;
-			heart = false;
-			jetPack = false;
-            lvl++;
-			transform.position = new Vector2(-26.27172f, -3.956429f);
-            SceneManager.LoadScene("Store", LoadSceneMode.Single);
+			if (lvl < 7) {
+				DontDestroyOnLoad (this.gameObject);
+				DontDestroyOnLoad (canvas);
+				this.gameObject.transform.localScale = new Vector2 (1.75f, 1.75f);
+				aerosol = false;
+				moonBoots = false;
+				heart = false;
+				jetPack = false;
+				lvl++;
+				transform.position = new Vector2 (-26.27172f, -3.956429f);
+				SceneManager.LoadScene ("Store", LoadSceneMode.Single);
+			} else {
+				Destroy (this.gameObject);
+				Destroy (canvas);
+				SceneManager.LoadScene ("Victory", LoadSceneMode.Single);
+			}
         }
         if(trig.gameObject.tag == "coin")
         {
@@ -192,6 +198,22 @@ public class PlayerScore : MonoBehaviour {
                     SceneManager.LoadScene("Level3", LoadSceneMode.Single);
                     transform.position = new Vector2(-8.06f, -3.956429f);
                 }
+				if (lvl == 4) {
+					SceneManager.LoadScene("Level4", LoadSceneMode.Single);
+					transform.position = new Vector2(-7.98f, -2.64641f);
+				}
+				if (lvl == 5) {
+					SceneManager.LoadScene("Level 2", LoadSceneMode.Single);
+					transform.position = new Vector2(-5.72f, -3.14f);
+				}
+				if (lvl == 6) {
+					SceneManager.LoadScene("Level6", LoadSceneMode.Single);
+					transform.position = new Vector2(-7.98986f, -3.77048f);
+				}
+				if (lvl == 7) {
+					SceneManager.LoadScene("Level 2", LoadSceneMode.Single);
+					transform.position = new Vector2(-5.72f, -3.14f);
+				}
                 displayExit = false;
             }
             if (GUI.Button(new Rect(160, 59, 80, 20), "No"))

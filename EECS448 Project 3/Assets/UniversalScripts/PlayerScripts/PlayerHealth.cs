@@ -67,7 +67,10 @@ public class PlayerHealth : MonoBehaviour
     {
         Destroy(this.gameObject);
         Destroy(canvas);
-        SceneManager.LoadScene("Level 1", LoadSceneMode.Single);
+		if (SceneManager.GetActiveScene ().name == "Test")
+			SceneManager.LoadScene ("Test", LoadSceneMode.Single);
+		else
+        	SceneManager.LoadScene("Death", LoadSceneMode.Single);
     }
 
 	private void OnTriggerEnter2D(Collider2D col)
@@ -94,6 +97,26 @@ public class PlayerHealth : MonoBehaviour
 			if (SceneManager.GetActiveScene().name == "Level3")
 			{
 				SceneManager.LoadScene("Level3", LoadSceneMode.Single);
+				transform.position = new Vector2(-8.06f, -3.956429f);
+			}
+			if (SceneManager.GetActiveScene().name == "Level4")
+			{
+				SceneManager.LoadScene("Level4", LoadSceneMode.Single);
+				transform.position = new Vector2(-7.98f, -2.64641f);
+			}
+			if (SceneManager.GetActiveScene().name == "Level 5")
+			{
+				SceneManager.LoadScene("Level 5", LoadSceneMode.Single);
+				transform.position = new Vector2(-8.06f, -3.956429f);
+			}
+			if (SceneManager.GetActiveScene().name == "Level6")
+			{
+				SceneManager.LoadScene("Level6", LoadSceneMode.Single);
+				transform.position = new Vector2(-7.98986f, -3.77048f);
+			}
+			if (SceneManager.GetActiveScene().name == "Level7")
+			{
+				SceneManager.LoadScene("Level7", LoadSceneMode.Single);
 				transform.position = new Vector2(-8.06f, -3.956429f);
 			}
 			Time.timeScale = 0;

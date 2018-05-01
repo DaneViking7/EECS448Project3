@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 61251262033586150}
   - component: {fileID: 114106159784730830}
   m_Layer: 0
-  m_Name: ImmobileSpawner
+  m_Name: FloorSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

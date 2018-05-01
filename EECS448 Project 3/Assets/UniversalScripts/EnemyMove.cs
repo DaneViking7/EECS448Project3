@@ -13,7 +13,7 @@ public class EnemyMove : MonoBehaviour {
 
 		float velocity = 3; //!< how fast the enemy moves toward the dinosaur
 
-		if (gameObject.name == "puffy" || gameObject.name == "Bee" || gameObject.name == "Ghost") {
+		if (gameObject.name == "puffy" || gameObject.name == "Bee" || gameObject.name == "Ghost" || gameObject.name == "puffy(Clone)" || gameObject.name == "Bee(Clone)" || gameObject.name == "Ghost(Clone)") {
 			if (transform.position.y >= ceiling) {
 				direction = -1;
 			}

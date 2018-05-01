@@ -11,7 +11,7 @@ public class MobileSpawnerScript : MonoBehaviour {
 	{
 		if (col.gameObject.tag == "Player") {
 			clone = Instantiate (prefab, this.transform.position, this.transform.rotation);
-			clone.transform.position = new Vector2(this.transform.position.x + 8, this.transform.position.y - 3);
+			clone.transform.position = new Vector2(this.transform.position.x + 8, this.transform.position.y - 3.5f);
 		}
 	}
 }

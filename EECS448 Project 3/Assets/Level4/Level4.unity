@@ -286,7 +286,7 @@ GameObject:
   - component: {fileID: 31377188}
   m_Layer: 0
   m_Name: GameObject (10)
-  m_TagString: Finish
+  m_TagString: lvlend
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -300,7 +300,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -8.800832}
@@ -3799,7 +3799,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 285
+  m_RootOrder: 286
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &384630971
 GameObject:
@@ -6082,7 +6082,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4282284153500568, guid: f65e0fde7e7c77d40b7bc3ecbc55ea95, type: 2}
       propertyPath: m_RootOrder
-      value: 279
+      value: 278
       objectReference: {fileID: 0}
     - target: {fileID: 1635086463496760, guid: f65e0fde7e7c77d40b7bc3ecbc55ea95, type: 2}
       propertyPath: m_Name
@@ -8421,7 +8421,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 292
+  m_RootOrder: 293
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &731280579
 GameObject:
@@ -11088,7 +11088,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 278
+  m_RootOrder: 279
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &941198864
 BoxCollider2D:
@@ -16755,7 +16755,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4598401665484480, guid: cb75c5797ab91aa41852b42d654c831a, type: 2}
       propertyPath: m_RootOrder
-      value: 286
+      value: 285
       objectReference: {fileID: 0}
     - target: {fileID: 1353156281430312, guid: cb75c5797ab91aa41852b42d654c831a, type: 2}
       propertyPath: m_Name
@@ -21609,7 +21609,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4136023097664038, guid: 94e3ad02b2868384db52fb32d2940c9d, type: 2}
       propertyPath: m_RootOrder
-      value: 293
+      value: 292
       objectReference: {fileID: 0}
     - target: {fileID: 1441215429860654, guid: 94e3ad02b2868384db52fb32d2940c9d, type: 2}
       propertyPath: m_Name
