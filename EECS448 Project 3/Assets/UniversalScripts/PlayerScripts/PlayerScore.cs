@@ -27,6 +27,30 @@ public class PlayerScore : MonoBehaviour {
     // Update is called once per frame
 	void Update () {
         coinCountUI.gameObject.GetComponent<Text>().text = ("Coins: " + coinCount);
+		if (Input.GetKeyDown ("2") && SceneManager.GetActiveScene ().name == "Test")
+		{
+			coinCount += 100;
+		}
+		if (Input.GetKeyDown ("5") && SceneManager.GetActiveScene ().name == "Test")
+		{
+			if (aerosol == false)
+				aerosol = true;
+			else
+				aerosol = false;
+		}
+		if (Input.GetKeyDown ("6") && SceneManager.GetActiveScene ().name == "Test")
+		{
+			if (this.gameObject.transform.localScale.x == 1.75f)
+				this.gameObject.transform.localScale = new Vector2(1, 1);
+			else
+				this.gameObject.transform.localScale = new Vector2(1.75f, 1.75f);
+		}
+		if (Input.GetKeyDown ("8") && SceneManager.GetActiveScene ().name == "Test")
+		{
+			GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+			foreach(GameObject enemy in enemies)
+				GameObject.Destroy(enemy);
+		}
 		if (aerosol == true)
 		{
 			if (Input.GetKeyDown ("space") && offCd == true)

@@ -39,6 +39,9 @@ public class PlayerHealth : MonoBehaviour
 			else
 				invincible = false;
 		}
+		if (Input.GetKeyDown ("3") && SceneManager.GetActiveScene ().name == "Test") {
+			lives++;
+		}
 		heart = targetScript.heart;
 		if (heart == true)
 		{

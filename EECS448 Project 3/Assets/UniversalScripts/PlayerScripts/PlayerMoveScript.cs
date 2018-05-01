@@ -27,6 +27,20 @@ public class PlayerMoveScript : MonoBehaviour {
 			playerJumpPower = 2000;
 		if (targetScript.moonBoots == true)
 			moonBoots = true;
+		if (Input.GetKeyDown ("4") && SceneManager.GetActiveScene ().name == "Test")
+		{
+			if (playerJumpPower == 1250)
+				playerJumpPower = 2000;
+			else
+				playerJumpPower = 1250;
+		}
+		if (Input.GetKeyDown ("7") && SceneManager.GetActiveScene ().name == "Test")
+		{
+			if (moonBoots == false)
+				moonBoots = true;
+			else
+				moonBoots = false;
+		}
 	}
 
 	void PlayerMove()
