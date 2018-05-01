@@ -47,7 +47,7 @@ public class PlayerScore : MonoBehaviour {
 		}
 		if (Input.GetKeyDown ("8") && SceneManager.GetActiveScene ().name == "Test")
 		{
-			GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+			GameObject[] enemies = GameObject.FindGameObjectsWithTag("Kill Object");
 			foreach(GameObject enemy in enemies)
 				GameObject.Destroy(enemy);
 		}
