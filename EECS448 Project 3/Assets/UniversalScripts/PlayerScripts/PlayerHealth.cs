@@ -128,6 +128,6 @@ public class PlayerHealth : MonoBehaviour
 	IEnumerator Timer()
 	{
 		yield return new WaitForSecondsRealtime(1);
-		Time.timeScale = 1;
+			Time.timeScale = 1;
 	}
 }
