@@ -8,11 +8,12 @@ public class EnemyMove : MonoBehaviour {
 	int direction = 1;
 	// Update is called once per frame
 	void Update () {
-		double ceiling = 4.5;
-		double floor = -4;
+		double ceiling = 4.5; //!< the highest point an enemy can move
+		double floor = -4; //!< the lowest point an enemy can move
 
-		float velocity = 3;
-		if (gameObject.name == "puffy") {
+		float velocity = 3; //!< how fast the enemy moves toward the dinosaur
+
+		if (gameObject.name == "puffy" || gameObject.name == "Bee" || gameObject.name == "Ghost") {
 			if (transform.position.y >= ceiling) {
 				direction = -1;
 			}
