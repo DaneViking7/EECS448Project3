@@ -12578,7 +12578,7 @@ GameObject:
   - component: {fileID: 1999025315}
   m_Layer: 0
   m_Name: ground1 (10)
-  m_TagString: lvlend
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

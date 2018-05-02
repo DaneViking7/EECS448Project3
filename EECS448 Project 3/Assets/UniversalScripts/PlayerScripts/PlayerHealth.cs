@@ -109,9 +109,9 @@ public class PlayerHealth : MonoBehaviour
 				SceneManager.LoadScene("Level4", LoadSceneMode.Single);
 				transform.position = new Vector2(-7.98f, -2.64641f);
 			}
-			if (SceneManager.GetActiveScene().name == "Level 5")
+			if (SceneManager.GetActiveScene().name == "Level5")
 			{
-				SceneManager.LoadScene("Level 5", LoadSceneMode.Single);
+				SceneManager.LoadScene("Level5", LoadSceneMode.Single);
 				transform.position = new Vector2(-8.06f, -3.95642f);
 			}
 			if (SceneManager.GetActiveScene().name == "Level6")
