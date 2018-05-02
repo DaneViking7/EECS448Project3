@@ -12,27 +12,11 @@ public class MainMenu : MonoBehaviour {
 
     #region Variables
 
-    public GameObject mainMenuUI;
+	public GameObject mainMenuUI; //! reference to the main menu's ui
 
     #endregion
 
-    #region Unity Methods
-
-
-    // Use this for initialization
-    void Start () 
-	{
-		
-	}
-	
-	// Update is called once per frame
-	void Update () 
-	{
-		
-	}
-
-    #endregion
-
+	//! starts the game at level 1
     public void StartGame()
     {
         mainMenuUI.SetActive(false);
@@ -41,6 +25,7 @@ public class MainMenu : MonoBehaviour {
         SceneManager.LoadScene("Level 1", LoadSceneMode.Single);
     }
 
+	//! starts the game in its test suite
 	public void TestMode()
 	{
 		mainMenuUI.SetActive(false);
@@ -49,6 +34,7 @@ public class MainMenu : MonoBehaviour {
 		SceneManager.LoadScene("Test", LoadSceneMode.Single);
 	}
 
+	//! ends the game
     public void QuitGame()
     {
         Application.Quit();

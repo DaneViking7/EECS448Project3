@@ -24,7 +24,7 @@ public class PauseMenu : MonoBehaviour {
 
 	#region Unity Methods
 
-	// Update is called once per frame
+	//! checks to see if the player hit the pause button
 	void Update () 
 	{
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -42,6 +42,7 @@ public class PauseMenu : MonoBehaviour {
 
     #endregion
 
+	//! pauses the game and displays the pause menu
     void PauseGame()
     {
 		if (Time.timeScale == 1) {
@@ -51,6 +52,7 @@ public class PauseMenu : MonoBehaviour {
 		}
     }
 
+	//! hides the pause menu and resumes the game
     public void ResumeGame()
     {
         pauseMenuUI.SetActive(false);
@@ -58,6 +60,7 @@ public class PauseMenu : MonoBehaviour {
         GameIsPaused = false;
     }
 
+	//! loads the main menu when the button is clicked
     public void LoadGameMenu()
     {
 		GameObject Dino = GameObject.Find("Dino");
@@ -68,11 +71,13 @@ public class PauseMenu : MonoBehaviour {
         pauseMenuUI.SetActive(false);
     }
 
+	//! ends the game
     public void QuitGame()
     {
         Application.Quit();
     }
 
+	//! turns on or off the music
 	public void ToggleMusic()
 	{
 		if (music == true) {

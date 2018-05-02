@@ -6,19 +6,20 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
-	public GameObject pt1;
-	public GameObject pt2;
-	public GameObject pt3;
-	GameObject Dino;
-	PlayerScore targetScript;
-	private bool heart;
+	public GameObject pt1; //! reference to the first pterodactyl in level 1
+	public GameObject pt2; //! reference to the second pterodactyl in level 1
+	public GameObject pt3; //! reference to the third pterodactyl in level 1
+	GameObject Dino; //! reference to the dino
+	PlayerScore targetScript; //! reference to the PlayerScore script
+	private bool heart; //! Adds 1 to the player's lives if the player buys the heart powerup
 	private bool dead; //!< boolean to indicate whether or not player died
     public GameObject canvas; //!< object to display number of coins on the screen
-	public GameObject livesCountUI;
-	public GameObject godModeUI;
-	private int lives;
-	bool invincible;
-    // Use this for initialization
+	public GameObject livesCountUI; //! displays the number of player lives remaining
+	public GameObject godModeUI; //! displays whether god mode is on or off in the test suite
+	private int lives; //! keeps track of the number of player lives remaining
+	bool invincible; //! true for god mode, false otherwise
+
+	//! initializes member variables
 	void Start()
     {
 		Time.timeScale = 1;
@@ -29,7 +30,7 @@ public class PlayerHealth : MonoBehaviour
 		invincible = false;
     }
 
-    // Update is called once per frame
+	//! Checks for health related test input and keeps track of the player's lives
 	void Update()
     {
 		if (Input.GetKeyDown ("1") && SceneManager.GetActiveScene ().name == "Test")
@@ -63,6 +64,7 @@ public class PlayerHealth : MonoBehaviour
             Die();
     }
 
+	//! Transitions to the death screne
 	void Die()
     {
 		GameObject hero = GameObject.Find("Hero");
@@ -75,6 +77,7 @@ public class PlayerHealth : MonoBehaviour
         	SceneManager.LoadScene("Death", LoadSceneMode.Single);
     }
 
+	//! Detects when the player collides with an object that would kill it and decides what will happen to the player
 	private void OnTriggerEnter2D(Collider2D col)
     {
 		if (col.gameObject.tag == "Kill Object" && invincible == false)
@@ -126,7 +129,7 @@ public class PlayerHealth : MonoBehaviour
 		}
     }
 
-	//! Timer for displaying powerup GUI
+	//! Timer for before the level starts again between lives
 	IEnumerator Timer()
 	{
 		yield return new WaitForSecondsRealtime(1);

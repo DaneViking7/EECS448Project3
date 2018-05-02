@@ -5,22 +5,23 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMoveScript : MonoBehaviour {
 
-	GameObject Dino;
-	PlayerScore targetScript;
-    public int playerSpeed = 10;
-	private bool moonBoots = false;
-	private int playerJumpPower = 1250;
-	private int jumpsRem = 2;
-	public float moveX;
-	private bool isGrounded;
+	GameObject Dino; //! reference to the player
+	PlayerScore targetScript; //! reference to the PlayerScore script
+	public int playerSpeed = 10; //! the player's movement speed
+	private bool moonBoots = false; //! true if the player has the moonBoots powerup for the level, false otherwise
+	private int playerJumpPower = 1250; //! player's jump power
+	private int jumpsRem = 2; //! player's jumps remaining if they have the moonBoots powerup
+	public float moveX; //! direction the player is running
+	private bool isGrounded; //! true if the player is touching the ground, false otherwise
 
+	//! sets the script's member variables
 	void Start()
 	{
 		Dino = GameObject.Find("Dino");
 		targetScript  = Dino.GetComponent<PlayerScore>();
 	}
 
-	// Update is called once per frame
+	//! checks for movement related test input and if the player is causing the dino to move or has a movement related power up
 	void Update () {
         PlayerMove();
 		if (targetScript.jetPack == true)
@@ -43,6 +44,7 @@ public class PlayerMoveScript : MonoBehaviour {
 		}
 	}
 
+	//! runs player movement, physics, and turning
 	void PlayerMove()
     {
         moveX = Input.GetAxis("Horizontal");
@@ -74,6 +76,7 @@ public class PlayerMoveScript : MonoBehaviour {
         }
     }
 
+	//! runs player jumping, allows one jump normally and 2 with moon boots power up
 	void Jump()
     {
         GetComponent<Rigidbody2D>().AddForce (Vector2.up * playerJumpPower);
@@ -87,6 +90,7 @@ public class PlayerMoveScript : MonoBehaviour {
         	isGrounded = false;
     }
 
+	//! detects when the player touches the ground to refresh their jump count
 	private void OnCollisionEnter2D(Collision2D col)
     {
 		if (col.gameObject.tag == "ground")
@@ -96,6 +100,7 @@ public class PlayerMoveScript : MonoBehaviour {
 		}
     }
 
+	//! gets rid of movement based power ups on level end
 	private void OnTriggerEnter2D(Collider2D trig)
 	{
 		if(trig.gameObject.tag == "lvlend")

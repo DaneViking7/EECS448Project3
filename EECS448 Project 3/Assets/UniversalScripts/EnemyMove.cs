@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyMove : MonoBehaviour {
 
 	private int enemySpeed = 5; //!< speed that dinosaur moves across screen
-	int direction = 1;
+	int direction = 1; 
 	// Update is called once per frame
 	void Update () {
 		double ceiling = 4.5; //!< the highest point an enemy can move

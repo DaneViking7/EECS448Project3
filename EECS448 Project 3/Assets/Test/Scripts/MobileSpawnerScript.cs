@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class MobileSpawnerScript : MonoBehaviour {
 
-	public GameObject prefab;
-	private GameObject clone;
+	public GameObject prefab;//! reference to the prefab the spawner will generate
+	private GameObject clone;//! reference to the object to be generated
 
+	//! creates the prefab object when the player hits the spawner, places it in front of the spawner
 	private void OnCollisionEnter2D(Collision2D col)
 	{
 		if (col.gameObject.tag == "Player") {

@@ -12,13 +12,13 @@ public class CameraSystem : MonoBehaviour
 	public float yMin; //!< minimum y position for the camera
 	public float yMax; //!< maximum y position for the camera
 
-	// Use this for initialization
+	//! sets the script's member variables
 	void Start()
 	{
 		player = GameObject.FindGameObjectWithTag("Player");
 	}
 
-	// Update is called once per frame
+	//! anchors the camera on the dinosaur
 	void LateUpdate()
 	{
 		if (player != null)
