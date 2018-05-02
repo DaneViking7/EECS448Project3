@@ -11,10 +11,10 @@ public class PlayerScore : MonoBehaviour {
     public GameObject coinCountUI; //!< object to display number of coins at the top
 	private int lvl = 1; //!< counter to count number of times the Dino has entered the store
 	public bool aerosol = false; //!< boolean to indicate possession of aerosol can
-	public GameObject fireball;
-	public bool heart = false;
+	public GameObject fireball; //! reference to the fireball object
+	public bool heart = false; //! boolean to indicate possession of the extra life
 	public bool moonBoots = false; //!< boolean to indicate possession of moon shoes
-	public bool jetPack = false;
+	public bool jetPack = false; //! boolean to indicate possession of the jetpack
 	private const int eggCost = 5; //!< the cost of an Egg powerup
 	private const int moonBootsCost = 10; //!< the cost of a Moon Boots powerup
 	private const int heartCost = 25; //!< the cost of a Heart powerup
@@ -22,9 +22,9 @@ public class PlayerScore : MonoBehaviour {
 	private const int jetPackCost = 20; //!< the cost of a Jet Pack powerup
 	private bool displayExit = false; //!< boolean to enable/disable the Exit GUI menu
 	private bool displayNotEnoughCoins = false; //!< boolean to enable/disable the Not Enough Coins GUI
-	private bool offCd = true;
+	private bool offCd = true; //! true if the fireball is off cooldown, false otherwise
 
-    // Update is called once per frame
+	//! checks for coin or non-movement related test input, keeps track of the player's coin count, and shoots fireballs if the player has the aerosol powerup
 	void Update () {
         coinCountUI.gameObject.GetComponent<Text>().text = ("Coins: " + coinCount);
 		if (Input.GetKeyDown ("2") && SceneManager.GetActiveScene ().name == "Test")
@@ -62,20 +62,31 @@ public class PlayerScore : MonoBehaviour {
 		}
 	}
 
+	//! detects level ends and controls the transfer between levels, also detects getting coins and attempted powerup buys
 	private void OnTriggerEnter2D(Collider2D trig)
     {
         if(trig.gameObject.tag == "lvlend")
         {
-            DontDestroyOnLoad(this.gameObject);
-            DontDestroyOnLoad(canvas);
-			this.gameObject.transform.localScale = new Vector2(1.75f, 1.75f);
-			aerosol = false;
-			moonBoots = false;
-			heart = false;
-			jetPack = false;
-            lvl++;
-			transform.position = new Vector2(-26.27172f, -3.956429f);
-            SceneManager.LoadScene("Store", LoadSceneMode.Single);
+			if (lvl < 7) {
+				GameObject hero = GameObject.Find("Hero");
+				DontDestroyOnLoad (hero);
+				DontDestroyOnLoad (this.gameObject);
+				DontDestroyOnLoad (canvas);
+				this.gameObject.transform.localScale = new Vector2 (1.75f, 1.75f);
+				aerosol = false;
+				moonBoots = false;
+				heart = false;
+				jetPack = false;
+				lvl++;
+				transform.position = new Vector2 (-26.27172f, -3.956429f);
+				SceneManager.LoadScene ("Store", LoadSceneMode.Single);
+			} else {
+				GameObject hero = GameObject.Find("Hero");
+				Destroy (hero);
+				Destroy (this.gameObject);
+				Destroy (canvas);
+				SceneManager.LoadScene ("Victory", LoadSceneMode.Single);
+			}
         }
         if(trig.gameObject.tag == "coin")
         {
@@ -165,6 +176,7 @@ public class PlayerScore : MonoBehaviour {
         StartCoroutine(Timer());
     }
 
+	//! displays the exit to the store when colliding with the door
 	void OnCollisionEnter2D(Collision2D col)
     {
         if (col.gameObject.name == "door")
@@ -192,6 +204,22 @@ public class PlayerScore : MonoBehaviour {
                     SceneManager.LoadScene("Level3", LoadSceneMode.Single);
                     transform.position = new Vector2(-8.06f, -3.956429f);
                 }
+				if (lvl == 4) {
+					SceneManager.LoadScene("Level4", LoadSceneMode.Single);
+					transform.position = new Vector2(-7.98f, -2.64641f);
+				}
+				if (lvl == 5) {
+					SceneManager.LoadScene("Level5", LoadSceneMode.Single);
+					transform.position = new Vector2(-8.06f, -3.95642f);
+				}
+				if (lvl == 6) {
+					SceneManager.LoadScene("Level6", LoadSceneMode.Single);
+					transform.position = new Vector2(-7.98986f, -3.77048f);
+				}
+				if (lvl == 7) {
+					SceneManager.LoadScene("Level7", LoadSceneMode.Single);
+					transform.position = new Vector2(-8.04778f, -3.70197f);
+				}
                 displayExit = false;
             }
             if (GUI.Button(new Rect(160, 59, 80, 20), "No"))
