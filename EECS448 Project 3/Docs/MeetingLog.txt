@@ -149,5 +149,186 @@
     -Worked on Documentation
     -Meeting log finished and ready for upload and final prototype project will be pushed to GitHub after this final statement
 
+---------------------------------------------------------------------------------------------------------------------------------------------
+Project 4 Begins
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+4-12-18
+    -Meeting time from 12:30-2:20pm in Eaton 1005D
+    -Team members in attendance: Natalie, Annika, Niels, and Ron (for the first 15 minutes)
+    -Good work on Project 3
+    -Decided to wait to start physical work on anything until after feedback is received on Project 3
+    -Discussed features we'd like to see implemented in Project 4
+        -More powerups, in addition to getting current ones functional
+        -4 additional levels
+        -start screen, pause menu, game over screen
+    -Tasks for next time:
+        -All: none.
+
+4-16-18
+    -Meeting time from 9-10am in Leep2 study room
+    -Team members in attendance: Natalie, Annika, Niels, and Ron
+    -Briefly discussed features from previous meetings
+    -Waiting for feedback on Project 3 to proceed on
+    -Tasks for next time:
+        -All: none
+
+4-18-18
+    -Meeting time from 9-10am in Leep2 study room
+    -Team members in attendance: Natalie, Annika, Niels, and Ron
+    -Discussed our official game plan for Project 4 including feedback from Project 3
+        -Start menu
+            -instructions on how to play
+            -quit button
+            -start button
+            -option to adjust/disable sound
+        -Game over screen
+            -change dino sprite to "dead dino" sprite
+            -display total coins collected
+            -restart button
+            -back to main menu button
+        -Pause screen
+            -back to main menu button
+            -restart button with "are you sure?" prompt?
+            -option to adjust/disable sound
+            -how to play instructions
+            -resume button
+        -Victory screen 
+            -display total coins collected
+            -restart button
+            -back to main menu button
+        -Powerups
+            -aerosol can - shoot fireball to enemies (cooldown of some sort)
+            -moonboots - double jump - add functionality
+            -egg - mini dino - add functionality
+            -jetpack - fly above portion of level
+            -heart - extra life
+        -Music
+            -Different for each level (including store and main menu)
+            -quieter music while paused, stops when killed
+            -send neils a youtube video with the music you want in your level
+        -Health (life) system
+            -3 lives
+            -go back to store before a levels
+            -lose a life after dying
+            -can purchase a life in the store
+        -Ducking
+            -change sprite, hitbox, and increase gravity
+        -New levels
+            -3 new regular levels
+            -1 final boss level
+    Tasks assigned for the project:
+        -Natalie - Store, powerup visuals and basic code existence, rainforest level
+        -Annika - Game over screen, victory screen, underwater level
+        -Niels - Powerup functionality, music, health, ducking, boss level
+        -Ron - Start menu, Pause menu, cityscape (Godzilla) level
+    Project extras:
+        -Natalie - Documentation, Meeting Log, References, User manual
+        -Annika - Update Ghant Charts, update UML docs
+
+4-19-18
+    -Meeting time from 12:30-2:20pm in Eaton 1005D
+    -Team members in attendance: Natalie, Niels, Annika, and Ron (for the first 15 minutes)
+    -Disney Songs for music!!
+        -Level 1: Hercules - Go the Distance
+        -Level 2: Lion King -Circle of Life or Hakuna Matata
+        -Level 3: Frozen - Let it Go
+        -Level 4: Rainforest Level - Tarzan - Son of Man
+        -Level 5: City Scape - Mary Poppins - Chim Chimmery
+        -Level 6: Underwater level - Little Mermaid - Under the Sea
+        -Level 7: Boss level - Tangled - I've Got a Dream
+        -Store - Moana - Shiny
+    -Prices for power ups:
+        -Egg - 5
+        -Moonboots - 10
+        -Aerosol - 15
+        -Jetpack - 20
+        -Heart - 25
+    -Add more coins per level? 20 per level
+    -Tasks for next time:
+        -All: Start working on your parts!
+
+4-20-18
+    -Meeting time from 9-10am in Leep2 study room
+    -Team members in attendance: Natalie, Niels, Annika
+    -Did not discuss anything new
+    -Worked independently on our own parts
+    -Tasks for next time:
+        -All: continue working on your parts
+
+4-23-18
+    -Meeting time from 9-10am in Leep2 study room
+    -Team members in attendance: Natalie, Niels, Annika, and Ron
+    -Did not discuss anything new
+    -Showcased progress to team members
+    -Worked independently on our own parts
+    -Tasks for next time:
+        -All: continue working on your own parts
+
+4-25-18
+    -Meeting time from 9-10am in Leep2 study room
+    -Team members in attendance: Natalie, Niels, Annika, and Ron
+    -Changed song for Rainforest level from Tarzan to Jungle Book
+    -Annika took over Level 7 Design as Neil's tasks are longer/bigger than expected
+    -Showcased progress to team members
+    -Worked independently on our own parts
+    -Tasks for next time:
+        -All: continue working on your own parts
+
+4-26-18
+    -Meeting time from 12:30-2:20pm in Eaton 1005D
+    -Team members in attendance: Natalie, Niels, and Annika
+    -Dicsussed how to test our game
+        -have one sandbox level which includes all enemies and obstacles from all levels
+        -activtate using a button on main menu screen
+        -pop up a GUI message when you've collided with an object to test
+        -Niels will take over this task
+    -Worked on merge conflicts with camera system
+    -Discussed music issue, not doing separate songs for each level,
+        -doesn't sound good
+        -slows the game down too much
+    -Tasks for next time:
+        -All: continue working on your own parts
+
+4-30-18
+    -Meeting time from 9-10am in Leep2 study room
+    -Team members in attendance: Natalie, Niels, Annika and Ron (for last 15 minutes)
+    -Disscussed test suite
+    -Discussed god mode
+    -Discussed enemies for Boss level (Dungeon theme)
+    -Deadlines we would like to be done by to get things together
+        -Tuesday at 10pm by the latest - would like all levels to be done
+        -Wednesday - integration tasks, minor tweaks and bug fixes, documentation
+    -Niels needs prefabs for enemies for the test suite
+    -Natalie needs backgrounds and enemy sprites for each level for User Manual
+    -Tasks for next time:
+        All: have prefabs done by 4pm tuesday and levels done by 10pm tuesday
+        Annika: work on SCRUM artifacts
+        Natalie: work on User Manual, run documentation on Wednesday
+
+5-01-18
+    -Meeting time from 4-4:30pm and 5:00-5:30pm in 3002 Eaton Hall.
+    -Team members in attendance: Niels, Annika, and Ron 
+    -Integrated the Main Menu and Pause Menu
+    -Tasks for next time:
+        -Annika: Have Level 7 merged to master by 10pm
+        -Ron: Have Level 5 merged to master by 10pm
+
+5-02-18
+    -Meeting time from 8:30-9:50am in Leep2 2415 and Leep2 Study room
+    -Team members in attendance: Natalie, Niels, Annika, and Ron
+    -Discussed what still needs to be done:
+        -Still waiting on Level 5
+        -Need Level 5 to complete test suite as well as artifacts
+        -Documentation
+        -References
+        -Meeting Log
+        -Scrum artifacts
+        -Ghant Charts
+        -User Manual
+    -Tasks for midnight tonight:
+        -All: Finish everything up!
+
+
 
 
