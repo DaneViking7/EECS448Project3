@@ -8,6 +8,7 @@ TagManager:
   - ground
   - Kill Object
   - coin
+  - Kill Plat
   layers:
   - Default
   - TransparentFX
