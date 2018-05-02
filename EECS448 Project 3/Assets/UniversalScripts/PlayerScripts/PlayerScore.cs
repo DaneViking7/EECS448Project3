@@ -67,6 +67,8 @@ public class PlayerScore : MonoBehaviour {
         if(trig.gameObject.tag == "lvlend")
         {
 			if (lvl < 7) {
+				GameObject hero = GameObject.Find("Hero");
+				DontDestroyOnLoad (hero);
 				DontDestroyOnLoad (this.gameObject);
 				DontDestroyOnLoad (canvas);
 				this.gameObject.transform.localScale = new Vector2 (1.75f, 1.75f);
@@ -78,6 +80,8 @@ public class PlayerScore : MonoBehaviour {
 				transform.position = new Vector2 (-26.27172f, -3.956429f);
 				SceneManager.LoadScene ("Store", LoadSceneMode.Single);
 			} else {
+				GameObject hero = GameObject.Find("Hero");
+				Destroy (hero);
 				Destroy (this.gameObject);
 				Destroy (canvas);
 				SceneManager.LoadScene ("Victory", LoadSceneMode.Single);

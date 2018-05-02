@@ -41,6 +41,14 @@ public class MainMenu : MonoBehaviour {
         SceneManager.LoadScene("Level 1", LoadSceneMode.Single);
     }
 
+	public void TestMode()
+	{
+		mainMenuUI.SetActive(false);
+		Time.timeScale = 1f;
+		PauseMenu.GameIsPaused = false;
+		SceneManager.LoadScene("Test", LoadSceneMode.Single);
+	}
+
     public void QuitGame()
     {
         Application.Quit();

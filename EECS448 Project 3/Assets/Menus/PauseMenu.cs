@@ -16,12 +16,14 @@ public class PauseMenu : MonoBehaviour {
     public static bool GameIsPaused = false;
 
     public GameObject pauseMenuUI;
+
+	private bool music = true;
     
 
 	#endregion
 
 	#region Unity Methods
-	
+
 	// Update is called once per frame
 	void Update () 
 	{
@@ -70,5 +72,16 @@ public class PauseMenu : MonoBehaviour {
     {
         Application.Quit();
     }
-	
+
+	public void ToggleMusic()
+	{
+		if (music == true) {
+			music = false;
+			AudioListener.pause = true;
+		} 
+		else {
+			music = true;
+			AudioListener.pause = false;
+		}
+	}
 }

@@ -65,6 +65,8 @@ public class PlayerHealth : MonoBehaviour
 
 	void Die()
     {
+		GameObject hero = GameObject.Find("Hero");
+		Destroy (hero);
         Destroy(this.gameObject);
         Destroy(canvas);
 		if (SceneManager.GetActiveScene ().name == "Test")
