@@ -1,9 +1,23 @@
 var searchData=
 [
-  ['readbaseconfig',['readBaseConfig',['../class_doxygen_window.html#a5ba38d9b1d93fa627bc3b53cdd1dda17',1,'DoxygenWindow']]],
-  ['readfulllog',['ReadFullLog',['../class_doxy_thread_safe_output.html#a40486922d565c2b83934fd8e863bf843',1,'DoxyThreadSafeOutput']]],
-  ['readline',['ReadLine',['../class_doxy_thread_safe_output.html#a84958c6ebe8de10ced504bf5f2fde015',1,'DoxyThreadSafeOutput']]],
-  ['run',['Run',['../class_doxy_runner.html#a7458975df0c43d397051f225d6def184',1,'DoxyRunner']]],
-  ['rundoxygen',['RunDoxygen',['../class_doxygen_window.html#a63924417d5b5b7a71570ec9a9ef1ca5e',1,'DoxygenWindow']]],
-  ['runthreadeddoxy',['RunThreadedDoxy',['../class_doxy_runner.html#a0a838402bf7b6661d4a1959c1b57aeb6',1,'DoxyRunner']]]
+  ['pathtodoxygen',['PathtoDoxygen',['../class_doxygen_config.html#ad308ed1d0bdb202587fba232b754929f',1,'DoxygenConfig']]],
+  ['pausegame',['PauseGame',['../class_pause_menu.html#a2b86ff433ae3df8d0a717f3daa72943b',1,'PauseMenu']]],
+  ['pausemenu',['PauseMenu',['../class_pause_menu.html',1,'']]],
+  ['pausemenu_2ecs',['PauseMenu.cs',['../_pause_menu_8cs.html',1,'']]],
+  ['pausemenuui',['pauseMenuUI',['../class_pause_menu.html#a49305f37ccebc2342ea009f5cb259fee',1,'PauseMenu']]],
+  ['player',['player',['../class_store_camera_system.html#a50c6d97f1fcd687d6101ee0acded5929',1,'StoreCameraSystem.player()'],['../class_camera_system.html#a33940e527c11b633356ff5498f62c293',1,'CameraSystem.player()']]],
+  ['playerhealth',['PlayerHealth',['../class_player_health.html',1,'']]],
+  ['playerhealth_2ecs',['PlayerHealth.cs',['../_player_health_8cs.html',1,'']]],
+  ['playerjumppower',['playerJumpPower',['../class_player_move_script.html#a71b3aea4c7817e538141568b49f0acd4',1,'PlayerMoveScript']]],
+  ['playermove',['PlayerMove',['../class_player_move_script.html#a2305f760d2b2ce05ae28bcadfdf7515d',1,'PlayerMoveScript']]],
+  ['playermovescript',['PlayerMoveScript',['../class_player_move_script.html',1,'']]],
+  ['playermovescript_2ecs',['PlayerMoveScript.cs',['../_player_move_script_8cs.html',1,'']]],
+  ['playerscore',['PlayerScore',['../class_player_score.html',1,'']]],
+  ['playerscore_2ecs',['PlayerScore.cs',['../_player_score_8cs.html',1,'']]],
+  ['playerspeed',['playerSpeed',['../class_player_move_script.html#ae88d210e4c5c2e8d2eb27e1b19498c8f',1,'PlayerMoveScript']]],
+  ['prefab',['prefab',['../class_immobile_spawner_script.html#a523b7b5eee42835f989f717c8072f588',1,'ImmobileSpawnerScript.prefab()'],['../class_mobile_spawner_script.html#a801c6a0811d49d2ca2a0e99cddfcd32a',1,'MobileSpawnerScript.prefab()']]],
+  ['project',['Project',['../class_doxygen_config.html#ae69318495ba1db9f3a4d88e01764f9b4',1,'DoxygenConfig']]],
+  ['pt1',['pt1',['../class_player_health.html#a5719ff33405586360e84bd1ccd2297e5',1,'PlayerHealth']]],
+  ['pt2',['pt2',['../class_player_health.html#a2e53d845bdeb9f8ab550c0b35739a7a6',1,'PlayerHealth']]],
+  ['pt3',['pt3',['../class_player_health.html#aa9f65eb7ca6bec4c8e6aae35145644d1',1,'PlayerHealth']]]
 ];

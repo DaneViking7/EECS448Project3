@@ -23,7 +23,7 @@ for the JavaScript code in this file
 */
 var NAVTREE =
 [
-  [ "EECS448 Project 3", "index.html", [
+  [ "EECS448 Project 4", "index.html", [
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -43,7 +43,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_camera_system_8cs.html"
+"_buttons_8cs.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

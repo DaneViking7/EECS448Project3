@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['camerasystem',['CameraSystem',['../class_camera_system.html',1,'']]]
+  ['buttons',['Buttons',['../class_buttons.html',1,'']]]
 ];

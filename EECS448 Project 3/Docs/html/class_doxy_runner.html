@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>EECS448 Project 3: DoxyRunner Class Reference</title>
+<title>EECS448 Project 4: DoxyRunner Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -29,10 +29,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">EECS448 Project 3
-   &#160;<span id="projectnumber">Version1</span>
+   <div id="projectname">EECS448 Project 4
+   &#160;<span id="projectnumber">Version2</span>
    </div>
-   <div id="projectbrief">Dinosaur Platform Game Prototype</div>
+   <div id="projectbrief">Dinosaur Platform Game</div>
   </td>
  </tr>
  </tbody>
@@ -91,6 +91,8 @@ $(document).ready(function(){initNavTree('class_doxy_runner.html','');});
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="class_doxy_runner-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">DoxyRunner Class Reference</div>  </div>
@@ -129,6 +131,18 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a9661f03da50c7783e9bc99e2a92f14e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a015e8e8211c24140065dfc92f5fba71b"><td class="memItemLeft" align="right" valign="top">string []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_doxy_runner.html#a015e8e8211c24140065dfc92f5fba71b">Args</a></td></tr>
 <tr class="separator:a015e8e8211c24140065dfc92f5fba71b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a351a03f03f482a3fac5de95e5400f0bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_doxy_thread_safe_output.html">DoxyThreadSafeOutput</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_doxy_runner.html#a351a03f03f482a3fac5de95e5400f0bd">SafeOutput</a></td></tr>
+<tr class="separator:a351a03f03f482a3fac5de95e5400f0bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a942dbce786f3f791a235da931b5313e1"><td class="memItemLeft" align="right" valign="top">List&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_doxy_runner.html#a942dbce786f3f791a235da931b5313e1">DoxyLog</a> = new List&lt;string&gt;()</td></tr>
+<tr class="separator:a942dbce786f3f791a235da931b5313e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a6589351599a93fd0e43d5aaf0fe07231"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_doxy_runner.html#a6589351599a93fd0e43d5aaf0fe07231">WorkingFolder</a></td></tr>
+<tr class="separator:a6589351599a93fd0e43d5aaf0fe07231"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class spawns and runs Doxygen in a separate thread, and could serve as an example of how to create plugins for unity that call a command line application and then get the data back into Unity safely. </p>
@@ -378,6 +392,28 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a942dbce786f3f791a235da931b5313e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a942dbce786f3f791a235da931b5313e1">&#9670;&nbsp;</a></span>DoxyLog</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;string&gt; DoxyRunner.DoxyLog = new List&lt;string&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a9661f03da50c7783e9bc99e2a92f14e6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9661f03da50c7783e9bc99e2a92f14e6">&#9670;&nbsp;</a></span>EXE</h2>
 
@@ -406,6 +442,50 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a351a03f03f482a3fac5de95e5400f0bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a351a03f03f482a3fac5de95e5400f0bd">&#9670;&nbsp;</a></span>SafeOutput</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_doxy_thread_safe_output.html">DoxyThreadSafeOutput</a> DoxyRunner.SafeOutput</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6589351599a93fd0e43d5aaf0fe07231"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6589351599a93fd0e43d5aaf0fe07231">&#9670;&nbsp;</a></span>WorkingFolder</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string DoxyRunner.WorkingFolder</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>C:/Users/nlalu/Documents/GitHub/EECS448Project3/EECS448 Project 3/Assets/Editor/Doxygen/<a class="el" href="_doxygen_window_8cs.html">DoxygenWindow.cs</a></li>
 </ul>
@@ -415,7 +495,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_doxy_runner.html">DoxyRunner</a></li>
-    <li class="footer">Generated on Sun Apr 8 2018 22:29:11 for EECS448 Project 3 by
+    <li class="footer">Generated on Wed May 2 2018 17:03:28 for EECS448 Project 4 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

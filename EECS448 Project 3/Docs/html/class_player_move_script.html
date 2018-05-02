@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>EECS448 Project 3: PlayerMoveScript Class Reference</title>
+<title>EECS448 Project 4: PlayerMoveScript Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -29,10 +29,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">EECS448 Project 3
-   &#160;<span id="projectnumber">Version1</span>
+   <div id="projectname">EECS448 Project 4
+   &#160;<span id="projectnumber">Version2</span>
    </div>
-   <div id="projectbrief">Dinosaur Platform Game Prototype</div>
+   <div id="projectbrief">Dinosaur Platform Game</div>
   </td>
  </tr>
  </tbody>
@@ -88,8 +88,9 @@ $(document).ready(function(){initNavTree('class_player_move_script.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_player_move_script-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">PlayerMoveScript Class Reference</div>  </div>
@@ -104,26 +105,54 @@ Inheritance diagram for PlayerMoveScript:</div>
 </map>
  </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:abac53732d2f03b6e307077775bc23a3b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_move_script.html#abac53732d2f03b6e307077775bc23a3b">Update</a> ()</td></tr>
-<tr class="separator:abac53732d2f03b6e307077775bc23a3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2305f760d2b2ce05ae28bcadfdf7515d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_move_script.html#a2305f760d2b2ce05ae28bcadfdf7515d">PlayerMove</a> ()</td></tr>
-<tr class="separator:a2305f760d2b2ce05ae28bcadfdf7515d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a746685e277b5886977cfecbf1d4e3d05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_move_script.html#a746685e277b5886977cfecbf1d4e3d05">Jump</a> ()</td></tr>
-<tr class="separator:a746685e277b5886977cfecbf1d4e3d05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d3c907fde16da04a13247c15bd0ceb3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_move_script.html#a8d3c907fde16da04a13247c15bd0ceb3">OnCollisionEnter2D</a> (Collision2D col)</td></tr>
-<tr class="separator:a8d3c907fde16da04a13247c15bd0ceb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:ae88d210e4c5c2e8d2eb27e1b19498c8f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_move_script.html#ae88d210e4c5c2e8d2eb27e1b19498c8f">playerSpeed</a> = 10</td></tr>
+<tr class="memdesc:ae88d210e4c5c2e8d2eb27e1b19498c8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">reference to the <a class="el" href="class_player_score.html">PlayerScore</a> script  <a href="#ae88d210e4c5c2e8d2eb27e1b19498c8f">More...</a><br /></td></tr>
 <tr class="separator:ae88d210e4c5c2e8d2eb27e1b19498c8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71b3aea4c7817e538141568b49f0acd4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_move_script.html#a71b3aea4c7817e538141568b49f0acd4">playerJumpPower</a> = 1250</td></tr>
-<tr class="separator:a71b3aea4c7817e538141568b49f0acd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6219ce463ae542c8d9313d1954428a3d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_move_script.html#a6219ce463ae542c8d9313d1954428a3d">moveX</a></td></tr>
+<tr class="memdesc:a6219ce463ae542c8d9313d1954428a3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">player's jumps remaining if they have the moonBoots powerup  <a href="#a6219ce463ae542c8d9313d1954428a3d">More...</a><br /></td></tr>
 <tr class="separator:a6219ce463ae542c8d9313d1954428a3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a359e4372dfd7558bf5076dfc0cddc667"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_move_script.html#a359e4372dfd7558bf5076dfc0cddc667">Start</a> ()</td></tr>
+<tr class="memdesc:a359e4372dfd7558bf5076dfc0cddc667"><td class="mdescLeft">&#160;</td><td class="mdescRight">true if the player is touching the ground, false otherwise  <a href="#a359e4372dfd7558bf5076dfc0cddc667">More...</a><br /></td></tr>
+<tr class="separator:a359e4372dfd7558bf5076dfc0cddc667"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abac53732d2f03b6e307077775bc23a3b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_move_script.html#abac53732d2f03b6e307077775bc23a3b">Update</a> ()</td></tr>
+<tr class="memdesc:abac53732d2f03b6e307077775bc23a3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks for movement related test input and if the player is causing the dino to move or has a movement related power up  <a href="#abac53732d2f03b6e307077775bc23a3b">More...</a><br /></td></tr>
+<tr class="separator:abac53732d2f03b6e307077775bc23a3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2305f760d2b2ce05ae28bcadfdf7515d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_move_script.html#a2305f760d2b2ce05ae28bcadfdf7515d">PlayerMove</a> ()</td></tr>
+<tr class="memdesc:a2305f760d2b2ce05ae28bcadfdf7515d"><td class="mdescLeft">&#160;</td><td class="mdescRight">runs player movement, physics, and turning  <a href="#a2305f760d2b2ce05ae28bcadfdf7515d">More...</a><br /></td></tr>
+<tr class="separator:a2305f760d2b2ce05ae28bcadfdf7515d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a746685e277b5886977cfecbf1d4e3d05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_move_script.html#a746685e277b5886977cfecbf1d4e3d05">Jump</a> ()</td></tr>
+<tr class="memdesc:a746685e277b5886977cfecbf1d4e3d05"><td class="mdescLeft">&#160;</td><td class="mdescRight">runs player jumping, allows one jump normally and 2 with moon boots power up  <a href="#a746685e277b5886977cfecbf1d4e3d05">More...</a><br /></td></tr>
+<tr class="separator:a746685e277b5886977cfecbf1d4e3d05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d3c907fde16da04a13247c15bd0ceb3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_move_script.html#a8d3c907fde16da04a13247c15bd0ceb3">OnCollisionEnter2D</a> (Collision2D col)</td></tr>
+<tr class="memdesc:a8d3c907fde16da04a13247c15bd0ceb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">detects when the player touches the ground to refresh their jump count  <a href="#a8d3c907fde16da04a13247c15bd0ceb3">More...</a><br /></td></tr>
+<tr class="separator:a8d3c907fde16da04a13247c15bd0ceb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dc639b0018d2b4a6186b2b17b4648f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_move_script.html#a7dc639b0018d2b4a6186b2b17b4648f4">OnTriggerEnter2D</a> (Collider2D trig)</td></tr>
+<tr class="memdesc:a7dc639b0018d2b4a6186b2b17b4648f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">gets rid of movement based power ups on level end  <a href="#a7dc639b0018d2b4a6186b2b17b4648f4">More...</a><br /></td></tr>
+<tr class="separator:a7dc639b0018d2b4a6186b2b17b4648f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ac695be62b39fe86b5cbfe906b70b1f64"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_move_script.html#ac695be62b39fe86b5cbfe906b70b1f64">Dino</a></td></tr>
+<tr class="separator:ac695be62b39fe86b5cbfe906b70b1f64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a520a0a2ed33bf117187efbd13bd8fcd5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_player_score.html">PlayerScore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_move_script.html#a520a0a2ed33bf117187efbd13bd8fcd5">targetScript</a></td></tr>
+<tr class="memdesc:a520a0a2ed33bf117187efbd13bd8fcd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">reference to the player  <a href="#a520a0a2ed33bf117187efbd13bd8fcd5">More...</a><br /></td></tr>
+<tr class="separator:a520a0a2ed33bf117187efbd13bd8fcd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a645ca7ec10227e549c67f3617c705a89"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_move_script.html#a645ca7ec10227e549c67f3617c705a89">moonBoots</a> = false</td></tr>
+<tr class="memdesc:a645ca7ec10227e549c67f3617c705a89"><td class="mdescLeft">&#160;</td><td class="mdescRight">the player's movement speed  <a href="#a645ca7ec10227e549c67f3617c705a89">More...</a><br /></td></tr>
+<tr class="separator:a645ca7ec10227e549c67f3617c705a89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71b3aea4c7817e538141568b49f0acd4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_move_script.html#a71b3aea4c7817e538141568b49f0acd4">playerJumpPower</a> = 1250</td></tr>
+<tr class="memdesc:a71b3aea4c7817e538141568b49f0acd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">true if the player has the moonBoots powerup for the level, false otherwise  <a href="#a71b3aea4c7817e538141568b49f0acd4">More...</a><br /></td></tr>
+<tr class="separator:a71b3aea4c7817e538141568b49f0acd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e618f7fe826633113b1167aea370a94"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_move_script.html#a0e618f7fe826633113b1167aea370a94">jumpsRem</a> = 2</td></tr>
+<tr class="memdesc:a0e618f7fe826633113b1167aea370a94"><td class="mdescLeft">&#160;</td><td class="mdescRight">player's jump power  <a href="#a0e618f7fe826633113b1167aea370a94">More...</a><br /></td></tr>
+<tr class="separator:a0e618f7fe826633113b1167aea370a94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2f5a1dd48ef1b87a1c1cf30b9b6f8b0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_move_script.html#ab2f5a1dd48ef1b87a1c1cf30b9b6f8b0">isGrounded</a></td></tr>
+<tr class="memdesc:ab2f5a1dd48ef1b87a1c1cf30b9b6f8b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">direction the player is running  <a href="#ab2f5a1dd48ef1b87a1c1cf30b9b6f8b0">More...</a><br /></td></tr>
 <tr class="separator:ab2f5a1dd48ef1b87a1c1cf30b9b6f8b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -132,6 +161,9 @@ Public Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void PlayerMoveScript.Jump </td>
@@ -140,7 +172,14 @@ Public Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>runs player jumping, allows one jump normally and 2 with moon boots power up </p>
 
 </div>
 </div>
@@ -149,6 +188,9 @@ Public Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void PlayerMoveScript.OnCollisionEnter2D </td>
@@ -158,7 +200,42 @@ Public Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>detects when the player touches the ground to refresh their jump count </p>
+
+</div>
+</div>
+<a id="a7dc639b0018d2b4a6186b2b17b4648f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dc639b0018d2b4a6186b2b17b4648f4">&#9670;&nbsp;</a></span>OnTriggerEnter2D()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlayerMoveScript.OnTriggerEnter2D </td>
+          <td>(</td>
+          <td class="paramtype">Collider2D&#160;</td>
+          <td class="paramname"><em>trig</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>gets rid of movement based power ups on level end </p>
 
 </div>
 </div>
@@ -167,6 +244,9 @@ Public Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void PlayerMoveScript.PlayerMove </td>
@@ -175,7 +255,42 @@ Public Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>runs player movement, physics, and turning </p>
+
+</div>
+</div>
+<a id="a359e4372dfd7558bf5076dfc0cddc667"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a359e4372dfd7558bf5076dfc0cddc667">&#9670;&nbsp;</a></span>Start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlayerMoveScript.Start </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>true if the player is touching the ground, false otherwise </p>
+<p>sets the script's member variables </p>
 
 </div>
 </div>
@@ -184,6 +299,9 @@ Public Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void PlayerMoveScript.Update </td>
@@ -192,22 +310,109 @@ Public Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>checks for movement related test input and if the player is causing the dino to move or has a movement related power up </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="ac695be62b39fe86b5cbfe906b70b1f64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac695be62b39fe86b5cbfe906b70b1f64">&#9670;&nbsp;</a></span>Dino</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GameObject PlayerMoveScript.Dino</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ab2f5a1dd48ef1b87a1c1cf30b9b6f8b0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab2f5a1dd48ef1b87a1c1cf30b9b6f8b0">&#9670;&nbsp;</a></span>isGrounded</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool PlayerMoveScript.isGrounded</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>direction the player is running </p>
+
+</div>
+</div>
+<a id="a0e618f7fe826633113b1167aea370a94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e618f7fe826633113b1167aea370a94">&#9670;&nbsp;</a></span>jumpsRem</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int PlayerMoveScript.jumpsRem = 2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>player's jump power </p>
+
+</div>
+</div>
+<a id="a645ca7ec10227e549c67f3617c705a89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a645ca7ec10227e549c67f3617c705a89">&#9670;&nbsp;</a></span>moonBoots</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PlayerMoveScript.moonBoots = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>the player's movement speed </p>
 
 </div>
 </div>
@@ -223,6 +428,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>player's jumps remaining if they have the moonBoots powerup </p>
+
 </div>
 </div>
 <a id="a71b3aea4c7817e538141568b49f0acd4"></a>
@@ -230,12 +437,22 @@ Public Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int PlayerMoveScript.playerJumpPower = 1250</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>true if the player has the moonBoots powerup for the level, false otherwise </p>
 
 </div>
 </div>
@@ -251,6 +468,32 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>reference to the <a class="el" href="class_player_score.html">PlayerScore</a> script </p>
+
+</div>
+</div>
+<a id="a520a0a2ed33bf117187efbd13bd8fcd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a520a0a2ed33bf117187efbd13bd8fcd5">&#9670;&nbsp;</a></span>targetScript</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_player_score.html">PlayerScore</a> PlayerMoveScript.targetScript</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>reference to the player </p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -262,7 +505,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_player_move_script.html">PlayerMoveScript</a></li>
-    <li class="footer">Generated on Sun Apr 8 2018 22:29:11 for EECS448 Project 3 by
+    <li class="footer">Generated on Wed May 2 2018 17:03:28 for EECS448 Project 4 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

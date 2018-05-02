@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>EECS448 Project 3: PlayerScore Class Reference</title>
+<title>EECS448 Project 4: PlayerScore Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -29,10 +29,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">EECS448 Project 3
-   &#160;<span id="projectnumber">Version1</span>
+   <div id="projectname">EECS448 Project 4
+   &#160;<span id="projectnumber">Version2</span>
    </div>
-   <div id="projectbrief">Dinosaur Platform Game Prototype</div>
+   <div id="projectbrief">Dinosaur Platform Game</div>
   </td>
  </tr>
  </tbody>
@@ -88,8 +88,9 @@ $(document).ready(function(){initNavTree('class_player_score.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_player_score-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">PlayerScore Class Reference</div>  </div>
@@ -104,16 +105,41 @@ Inheritance diagram for PlayerScore:</div>
 </map>
  </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:af6b1385a6b3e0c7b9f3426d01f246b09"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_score.html#af6b1385a6b3e0c7b9f3426d01f246b09">canvas</a></td></tr>
+<tr class="memdesc:af6b1385a6b3e0c7b9f3426d01f246b09"><td class="mdescLeft">&#160;</td><td class="mdescRight">canvas to display number of coins at the top  <a href="#af6b1385a6b3e0c7b9f3426d01f246b09">More...</a><br /></td></tr>
+<tr class="separator:af6b1385a6b3e0c7b9f3426d01f246b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56dfc3df0a1a314dcf1f5c432b99b1d0"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_score.html#a56dfc3df0a1a314dcf1f5c432b99b1d0">coinCountUI</a></td></tr>
+<tr class="memdesc:a56dfc3df0a1a314dcf1f5c432b99b1d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">object to display number of coins at the top  <a href="#a56dfc3df0a1a314dcf1f5c432b99b1d0">More...</a><br /></td></tr>
+<tr class="separator:a56dfc3df0a1a314dcf1f5c432b99b1d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abca938512de828348d76a679502c37f2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_score.html#abca938512de828348d76a679502c37f2">aerosol</a> = false</td></tr>
+<tr class="memdesc:abca938512de828348d76a679502c37f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">boolean to indicate possession of aerosol can  <a href="#abca938512de828348d76a679502c37f2">More...</a><br /></td></tr>
+<tr class="separator:abca938512de828348d76a679502c37f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7bbd4f53a65bd46cf93476b5b6d504b"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_score.html#af7bbd4f53a65bd46cf93476b5b6d504b">fireball</a></td></tr>
+<tr class="separator:af7bbd4f53a65bd46cf93476b5b6d504b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02741ca08530b8e93111f94353a0129b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_score.html#a02741ca08530b8e93111f94353a0129b">heart</a> = false</td></tr>
+<tr class="memdesc:a02741ca08530b8e93111f94353a0129b"><td class="mdescLeft">&#160;</td><td class="mdescRight">reference to the fireball object  <a href="#a02741ca08530b8e93111f94353a0129b">More...</a><br /></td></tr>
+<tr class="separator:a02741ca08530b8e93111f94353a0129b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54e7fab3c276a7f2eccc8f40ef8b9e4c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_score.html#a54e7fab3c276a7f2eccc8f40ef8b9e4c">moonBoots</a> = false</td></tr>
+<tr class="memdesc:a54e7fab3c276a7f2eccc8f40ef8b9e4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">boolean to indicate possession of the extra life  <a href="#a54e7fab3c276a7f2eccc8f40ef8b9e4c">More...</a><br /></td></tr>
+<tr class="separator:a54e7fab3c276a7f2eccc8f40ef8b9e4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adec63c88c8887807b3ce32b057c21854"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_score.html#adec63c88c8887807b3ce32b057c21854">jetPack</a> = false</td></tr>
+<tr class="separator:adec63c88c8887807b3ce32b057c21854"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
 <tr class="memitem:a15452d6c7581dee96ba99a59d5a3f8ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_score.html#a15452d6c7581dee96ba99a59d5a3f8ff">Update</a> ()</td></tr>
+<tr class="memdesc:a15452d6c7581dee96ba99a59d5a3f8ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">true if the fireball is off cooldown, false otherwise  <a href="#a15452d6c7581dee96ba99a59d5a3f8ff">More...</a><br /></td></tr>
 <tr class="separator:a15452d6c7581dee96ba99a59d5a3f8ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacbeffdf66e43d6811acc60144210a6d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_score.html#aacbeffdf66e43d6811acc60144210a6d">OnTriggerEnter2D</a> (Collider2D trig)</td></tr>
+<tr class="memdesc:aacbeffdf66e43d6811acc60144210a6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">detects level ends and controls the transfer between levels, also detects getting coins and attempted powerup buys  <a href="#aacbeffdf66e43d6811acc60144210a6d">More...</a><br /></td></tr>
 <tr class="separator:aacbeffdf66e43d6811acc60144210a6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6ca77c68bebafbf94edf4e59f4221a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_score.html#ae6ca77c68bebafbf94edf4e59f4221a7">OnTriggerExit2D</a> (Collider2D trig)</td></tr>
 <tr class="memdesc:ae6ca77c68bebafbf94edf4e59f4221a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">start a timer for the GUI when dino falls from powerup  <a href="#ae6ca77c68bebafbf94edf4e59f4221a7">More...</a><br /></td></tr>
 <tr class="separator:ae6ca77c68bebafbf94edf4e59f4221a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1315b302bd2fd49ae5a8dfbba19c6f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_score.html#ad1315b302bd2fd49ae5a8dfbba19c6f3">OnCollisionEnter2D</a> (Collision2D col)</td></tr>
+<tr class="memdesc:ad1315b302bd2fd49ae5a8dfbba19c6f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">displays the exit to the store when colliding with the door  <a href="#ad1315b302bd2fd49ae5a8dfbba19c6f3">More...</a><br /></td></tr>
 <tr class="separator:ad1315b302bd2fd49ae5a8dfbba19c6f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a912c3583255298b32edcba4ee693dbdb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_score.html#a912c3583255298b32edcba4ee693dbdb">OnGUI</a> ()</td></tr>
 <tr class="memdesc:a912c3583255298b32edcba4ee693dbdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display GUIs based on collisions with game objects.  <a href="#a912c3583255298b32edcba4ee693dbdb">More...</a><br /></td></tr>
@@ -121,39 +147,41 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8b25664511ca051562b2d8af3db46be4"><td class="memItemLeft" align="right" valign="top">IEnumerator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_score.html#a8b25664511ca051562b2d8af3db46be4">Timer</a> ()</td></tr>
 <tr class="memdesc:a8b25664511ca051562b2d8af3db46be4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timer for displaying powerup GUI.  <a href="#a8b25664511ca051562b2d8af3db46be4">More...</a><br /></td></tr>
 <tr class="separator:a8b25664511ca051562b2d8af3db46be4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a8b5c7ffa9ca3858e972e73a4052b1d"><td class="memItemLeft" align="right" valign="top">IEnumerator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_score.html#a0a8b5c7ffa9ca3858e972e73a4052b1d">Timer2</a> ()</td></tr>
+<tr class="memdesc:a0a8b5c7ffa9ca3858e972e73a4052b1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timer for fireball cooldown.  <a href="#a0a8b5c7ffa9ca3858e972e73a4052b1d">More...</a><br /></td></tr>
+<tr class="separator:a0a8b5c7ffa9ca3858e972e73a4052b1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
 <tr class="memitem:a53b8e82b5729c3d556ed129ed44d68ef"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_score.html#a53b8e82b5729c3d556ed129ed44d68ef">coinCount</a> = 0</td></tr>
 <tr class="memdesc:a53b8e82b5729c3d556ed129ed44d68ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of coins the dino has earned  <a href="#a53b8e82b5729c3d556ed129ed44d68ef">More...</a><br /></td></tr>
 <tr class="separator:a53b8e82b5729c3d556ed129ed44d68ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6b1385a6b3e0c7b9f3426d01f246b09"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_score.html#af6b1385a6b3e0c7b9f3426d01f246b09">canvas</a></td></tr>
-<tr class="memdesc:af6b1385a6b3e0c7b9f3426d01f246b09"><td class="mdescLeft">&#160;</td><td class="mdescRight">canvas to display number of coins at the top  <a href="#af6b1385a6b3e0c7b9f3426d01f246b09">More...</a><br /></td></tr>
-<tr class="separator:af6b1385a6b3e0c7b9f3426d01f246b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56dfc3df0a1a314dcf1f5c432b99b1d0"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_score.html#a56dfc3df0a1a314dcf1f5c432b99b1d0">coinCountUI</a></td></tr>
-<tr class="memdesc:a56dfc3df0a1a314dcf1f5c432b99b1d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">object to display number of coins at the top  <a href="#a56dfc3df0a1a314dcf1f5c432b99b1d0">More...</a><br /></td></tr>
-<tr class="separator:a56dfc3df0a1a314dcf1f5c432b99b1d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e82977b74331d21c2d96424df8c728f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_score.html#a5e82977b74331d21c2d96424df8c728f">moonshoes</a> = false</td></tr>
-<tr class="memdesc:a5e82977b74331d21c2d96424df8c728f"><td class="mdescLeft">&#160;</td><td class="mdescRight">boolean to indicate possession of moon shoes  <a href="#a5e82977b74331d21c2d96424df8c728f">More...</a><br /></td></tr>
-<tr class="separator:a5e82977b74331d21c2d96424df8c728f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5afd2825bf45bebc206ba23c190e735"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_score.html#af5afd2825bf45bebc206ba23c190e735">mini</a> = false</td></tr>
-<tr class="memdesc:af5afd2825bf45bebc206ba23c190e735"><td class="mdescLeft">&#160;</td><td class="mdescRight">boolean to indicate possession of egg  <a href="#af5afd2825bf45bebc206ba23c190e735">More...</a><br /></td></tr>
-<tr class="separator:af5afd2825bf45bebc206ba23c190e735"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9edbc13ea6bf9197ef55ca59493bdc0b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_score.html#a9edbc13ea6bf9197ef55ca59493bdc0b">lvl</a> = 1</td></tr>
 <tr class="memdesc:a9edbc13ea6bf9197ef55ca59493bdc0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">counter to count number of times the Dino has entered the store  <a href="#a9edbc13ea6bf9197ef55ca59493bdc0b">More...</a><br /></td></tr>
 <tr class="separator:a9edbc13ea6bf9197ef55ca59493bdc0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5bef1175d20cf1b677ed3763e7a6b2f0"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_score.html#a5bef1175d20cf1b677ed3763e7a6b2f0">eggCost</a> = 15</td></tr>
-<tr class="memdesc:a5bef1175d20cf1b677ed3763e7a6b2f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">the cost of an Egg powerup  <a href="#a5bef1175d20cf1b677ed3763e7a6b2f0">More...</a><br /></td></tr>
+<tr class="memitem:a5bef1175d20cf1b677ed3763e7a6b2f0"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_score.html#a5bef1175d20cf1b677ed3763e7a6b2f0">eggCost</a> = 5</td></tr>
+<tr class="memdesc:a5bef1175d20cf1b677ed3763e7a6b2f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">boolean to indicate possession of the jetpack  <a href="#a5bef1175d20cf1b677ed3763e7a6b2f0">More...</a><br /></td></tr>
 <tr class="separator:a5bef1175d20cf1b677ed3763e7a6b2f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a8c41f924edcbbb4e98b1486723e8dd"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_score.html#a2a8c41f924edcbbb4e98b1486723e8dd">moonBootsCost</a> = 20</td></tr>
-<tr class="memdesc:a2a8c41f924edcbbb4e98b1486723e8dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">the cost of a Moon Boots  <a href="#a2a8c41f924edcbbb4e98b1486723e8dd">More...</a><br /></td></tr>
+<tr class="memitem:a2a8c41f924edcbbb4e98b1486723e8dd"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_score.html#a2a8c41f924edcbbb4e98b1486723e8dd">moonBootsCost</a> = 10</td></tr>
+<tr class="memdesc:a2a8c41f924edcbbb4e98b1486723e8dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">the cost of a Moon Boots powerup  <a href="#a2a8c41f924edcbbb4e98b1486723e8dd">More...</a><br /></td></tr>
 <tr class="separator:a2a8c41f924edcbbb4e98b1486723e8dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f0375e6250042470db143eb83a9e20b"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_score.html#a8f0375e6250042470db143eb83a9e20b">heartCost</a> = 25</td></tr>
+<tr class="memdesc:a8f0375e6250042470db143eb83a9e20b"><td class="mdescLeft">&#160;</td><td class="mdescRight">the cost of a Heart powerup  <a href="#a8f0375e6250042470db143eb83a9e20b">More...</a><br /></td></tr>
+<tr class="separator:a8f0375e6250042470db143eb83a9e20b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4df984e4dedad556de680ca211583d09"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_score.html#a4df984e4dedad556de680ca211583d09">aerosolCanCost</a> = 15</td></tr>
+<tr class="memdesc:a4df984e4dedad556de680ca211583d09"><td class="mdescLeft">&#160;</td><td class="mdescRight">the cost of an Aerosol Can powerup  <a href="#a4df984e4dedad556de680ca211583d09">More...</a><br /></td></tr>
+<tr class="separator:a4df984e4dedad556de680ca211583d09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d515a0bdb457a5428f898b1b706f13f"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_score.html#a4d515a0bdb457a5428f898b1b706f13f">jetPackCost</a> = 20</td></tr>
+<tr class="memdesc:a4d515a0bdb457a5428f898b1b706f13f"><td class="mdescLeft">&#160;</td><td class="mdescRight">the cost of a Jet Pack powerup  <a href="#a4d515a0bdb457a5428f898b1b706f13f">More...</a><br /></td></tr>
+<tr class="separator:a4d515a0bdb457a5428f898b1b706f13f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafad46611310fa2eeb0e59ecf82e5a4b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_score.html#aafad46611310fa2eeb0e59ecf82e5a4b">displayExit</a> = false</td></tr>
 <tr class="memdesc:aafad46611310fa2eeb0e59ecf82e5a4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">boolean to enable/disable the Exit GUI menu  <a href="#aafad46611310fa2eeb0e59ecf82e5a4b">More...</a><br /></td></tr>
 <tr class="separator:aafad46611310fa2eeb0e59ecf82e5a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac07b36d8cf4737172fb07bb24e59fcd5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_score.html#ac07b36d8cf4737172fb07bb24e59fcd5">displayNotEnoughCoins</a> = false</td></tr>
 <tr class="memdesc:ac07b36d8cf4737172fb07bb24e59fcd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">boolean to enable/disable the Not Enough Coins GUI  <a href="#ac07b36d8cf4737172fb07bb24e59fcd5">More...</a><br /></td></tr>
 <tr class="separator:ac07b36d8cf4737172fb07bb24e59fcd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a073f9c7bd80e9a96a72ce03edcb5994f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_score.html#a073f9c7bd80e9a96a72ce03edcb5994f">offCd</a> = true</td></tr>
+<tr class="separator:a073f9c7bd80e9a96a72ce03edcb5994f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ad1315b302bd2fd49ae5a8dfbba19c6f3"></a>
@@ -161,6 +189,9 @@ Public Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void PlayerScore.OnCollisionEnter2D </td>
@@ -170,7 +201,14 @@ Public Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>displays the exit to the store when colliding with the door </p>
 
 </div>
 </div>
@@ -179,6 +217,9 @@ Public Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void PlayerScore.OnGUI </td>
@@ -187,6 +228,11 @@ Public Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Display GUIs based on collisions with game objects. </p>
@@ -198,6 +244,9 @@ Public Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void PlayerScore.OnTriggerEnter2D </td>
@@ -207,7 +256,14 @@ Public Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>detects level ends and controls the transfer between levels, also detects getting coins and attempted powerup buys </p>
 
 </div>
 </div>
@@ -216,6 +272,9 @@ Public Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void PlayerScore.OnTriggerExit2D </td>
@@ -225,6 +284,11 @@ Public Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>start a timer for the GUI when dino falls from powerup </p>
@@ -236,6 +300,9 @@ Public Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">IEnumerator PlayerScore.Timer </td>
@@ -244,9 +311,41 @@ Public Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Timer for displaying powerup GUI. </p>
+
+</div>
+</div>
+<a id="a0a8b5c7ffa9ca3858e972e73a4052b1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a8b5c7ffa9ca3858e972e73a4052b1d">&#9670;&nbsp;</a></span>Timer2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IEnumerator PlayerScore.Timer2 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Timer for fireball cooldown. </p>
 
 </div>
 </div>
@@ -255,6 +354,9 @@ Public Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void PlayerScore.Update </td>
@@ -263,11 +365,59 @@ Public Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>true if the fireball is off cooldown, false otherwise </p>
+<p>checks for coin or non-movement related test input, keeps track of the player's coin count, and shoots fireballs if the player has the aerosol powerup </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="abca938512de828348d76a679502c37f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abca938512de828348d76a679502c37f2">&#9670;&nbsp;</a></span>aerosol</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PlayerScore.aerosol = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>boolean to indicate possession of aerosol can </p>
+
+</div>
+</div>
+<a id="a4df984e4dedad556de680ca211583d09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4df984e4dedad556de680ca211583d09">&#9670;&nbsp;</a></span>aerosolCanCost</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int PlayerScore.aerosolCanCost = 15</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>the cost of an Aerosol Can powerup </p>
+
+</div>
+</div>
 <a id="af6b1385a6b3e0c7b9f3426d01f246b09"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af6b1385a6b3e0c7b9f3426d01f246b09">&#9670;&nbsp;</a></span>canvas</h2>
 
@@ -289,11 +439,19 @@ Public Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int PlayerScore.coinCount = 0</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>number of coins the dino has earned </p>
@@ -321,11 +479,19 @@ Public Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool PlayerScore.displayExit = false</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>boolean to enable/disable the Exit GUI menu </p>
@@ -337,11 +503,19 @@ Public Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool PlayerScore.displayNotEnoughCoins = false</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>boolean to enable/disable the Not Enough Coins GUI </p>
@@ -353,14 +527,115 @@ Public Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const int PlayerScore.eggCost = 15</td>
+          <td class="memname">const int PlayerScore.eggCost = 5</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>boolean to indicate possession of the jetpack </p>
+<p>the cost of an Egg powerup </p>
+
+</div>
+</div>
+<a id="af7bbd4f53a65bd46cf93476b5b6d504b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7bbd4f53a65bd46cf93476b5b6d504b">&#9670;&nbsp;</a></span>fireball</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GameObject PlayerScore.fireball</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>the cost of an Egg powerup </p>
+</div>
+</div>
+<a id="a02741ca08530b8e93111f94353a0129b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02741ca08530b8e93111f94353a0129b">&#9670;&nbsp;</a></span>heart</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PlayerScore.heart = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>reference to the fireball object </p>
+
+</div>
+</div>
+<a id="a8f0375e6250042470db143eb83a9e20b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f0375e6250042470db143eb83a9e20b">&#9670;&nbsp;</a></span>heartCost</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int PlayerScore.heartCost = 25</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>the cost of a Heart powerup </p>
+
+</div>
+</div>
+<a id="adec63c88c8887807b3ce32b057c21854"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adec63c88c8887807b3ce32b057c21854">&#9670;&nbsp;</a></span>jetPack</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PlayerScore.jetPack = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4d515a0bdb457a5428f898b1b706f13f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d515a0bdb457a5428f898b1b706f13f">&#9670;&nbsp;</a></span>jetPackCost</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int PlayerScore.jetPackCost = 20</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>the cost of a Jet Pack powerup </p>
 
 </div>
 </div>
@@ -369,30 +644,39 @@ Public Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int PlayerScore.lvl = 1</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>counter to count number of times the Dino has entered the store </p>
 
 </div>
 </div>
-<a id="af5afd2825bf45bebc206ba23c190e735"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5afd2825bf45bebc206ba23c190e735">&#9670;&nbsp;</a></span>mini</h2>
+<a id="a54e7fab3c276a7f2eccc8f40ef8b9e4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54e7fab3c276a7f2eccc8f40ef8b9e4c">&#9670;&nbsp;</a></span>moonBoots</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool PlayerScore.mini = false</td>
+          <td class="memname">bool PlayerScore.moonBoots = false</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>boolean to indicate possession of egg </p>
+<p>boolean to indicate possession of the extra life </p>
+<p>boolean to indicate possession of moon shoes </p>
 
 </div>
 </div>
@@ -401,30 +685,44 @@ Public Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const int PlayerScore.moonBootsCost = 20</td>
+          <td class="memname">const int PlayerScore.moonBootsCost = 10</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>the cost of a Moon Boots </p>
+<p>the cost of a Moon Boots powerup </p>
 
 </div>
 </div>
-<a id="a5e82977b74331d21c2d96424df8c728f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e82977b74331d21c2d96424df8c728f">&#9670;&nbsp;</a></span>moonshoes</h2>
+<a id="a073f9c7bd80e9a96a72ce03edcb5994f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a073f9c7bd80e9a96a72ce03edcb5994f">&#9670;&nbsp;</a></span>offCd</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool PlayerScore.moonshoes = false</td>
+          <td class="memname">bool PlayerScore.offCd = true</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-
-<p>boolean to indicate possession of moon shoes </p>
 
 </div>
 </div>
@@ -437,7 +735,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_player_score.html">PlayerScore</a></li>
-    <li class="footer">Generated on Sun Apr 8 2018 22:29:11 for EECS448 Project 3 by
+    <li class="footer">Generated on Wed May 2 2018 17:03:28 for EECS448 Project 4 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

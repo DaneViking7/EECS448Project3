@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['mini',['mini',['../class_player_score.html#af5afd2825bf45bebc206ba23c190e735',1,'PlayerScore']]],
-  ['moonbootscost',['moonBootsCost',['../class_player_score.html#a2a8c41f924edcbbb4e98b1486723e8dd',1,'PlayerScore']]],
-  ['moonshoes',['moonshoes',['../class_player_score.html#a5e82977b74331d21c2d96424df8c728f',1,'PlayerScore']]],
-  ['movex',['moveX',['../class_player_move_script.html#a6219ce463ae542c8d9313d1954428a3d',1,'PlayerMoveScript']]]
+  ['heart',['heart',['../class_player_health.html#a0696df45a4b26d52dc223e8c21048c03',1,'PlayerHealth.heart()'],['../class_player_score.html#a02741ca08530b8e93111f94353a0129b',1,'PlayerScore.heart()']]],
+  ['heartcost',['heartCost',['../class_player_score.html#a8f0375e6250042470db143eb83a9e20b',1,'PlayerScore']]]
 ];

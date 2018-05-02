@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>EECS448 Project 3: PlayerHealth Class Reference</title>
+<title>EECS448 Project 4: PlayerHealth Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -29,10 +29,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">EECS448 Project 3
-   &#160;<span id="projectnumber">Version1</span>
+   <div id="projectname">EECS448 Project 4
+   &#160;<span id="projectnumber">Version2</span>
    </div>
-   <div id="projectbrief">Dinosaur Platform Game Prototype</div>
+   <div id="projectbrief">Dinosaur Platform Game</div>
   </td>
  </tr>
  </tbody>
@@ -88,8 +88,9 @@ $(document).ready(function(){initNavTree('class_player_health.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_player_health-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">PlayerHealth Class Reference</div>  </div>
@@ -104,25 +105,63 @@ Inheritance diagram for PlayerHealth:</div>
 </map>
  </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a2dc105641d870f4a48bf90a5d0dec87c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_health.html#a2dc105641d870f4a48bf90a5d0dec87c">Start</a> ()</td></tr>
-<tr class="separator:a2dc105641d870f4a48bf90a5d0dec87c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c49fdd702b2cf0fca654ef6e502f311"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_health.html#a3c49fdd702b2cf0fca654ef6e502f311">Update</a> ()</td></tr>
-<tr class="separator:a3c49fdd702b2cf0fca654ef6e502f311"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace992787dceb63696c18f909eee99e42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_health.html#ace992787dceb63696c18f909eee99e42">Die</a> ()</td></tr>
-<tr class="separator:ace992787dceb63696c18f909eee99e42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9170f342d041b29c5f91d17162be21a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_health.html#a9170f342d041b29c5f91d17162be21a9">OnTriggerEnter2D</a> (Collider2D col)</td></tr>
-<tr class="separator:a9170f342d041b29c5f91d17162be21a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a147b2801a5068c279d9d146223269e01"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_health.html#a147b2801a5068c279d9d146223269e01">dead</a></td></tr>
-<tr class="memdesc:a147b2801a5068c279d9d146223269e01"><td class="mdescLeft">&#160;</td><td class="mdescRight">boolean to indicate whether or not player died  <a href="#a147b2801a5068c279d9d146223269e01">More...</a><br /></td></tr>
-<tr class="separator:a147b2801a5068c279d9d146223269e01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5719ff33405586360e84bd1ccd2297e5"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_health.html#a5719ff33405586360e84bd1ccd2297e5">pt1</a></td></tr>
+<tr class="separator:a5719ff33405586360e84bd1ccd2297e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e53d845bdeb9f8ab550c0b35739a7a6"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_health.html#a2e53d845bdeb9f8ab550c0b35739a7a6">pt2</a></td></tr>
+<tr class="memdesc:a2e53d845bdeb9f8ab550c0b35739a7a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">reference to the first pterodactyl in level 1  <a href="#a2e53d845bdeb9f8ab550c0b35739a7a6">More...</a><br /></td></tr>
+<tr class="separator:a2e53d845bdeb9f8ab550c0b35739a7a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9f65eb7ca6bec4c8e6aae35145644d1"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_health.html#aa9f65eb7ca6bec4c8e6aae35145644d1">pt3</a></td></tr>
+<tr class="memdesc:aa9f65eb7ca6bec4c8e6aae35145644d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">reference to the second pterodactyl in level 1  <a href="#aa9f65eb7ca6bec4c8e6aae35145644d1">More...</a><br /></td></tr>
+<tr class="separator:aa9f65eb7ca6bec4c8e6aae35145644d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8093b85b9bb3fbb9b12388b77db6248"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_health.html#ae8093b85b9bb3fbb9b12388b77db6248">canvas</a></td></tr>
 <tr class="memdesc:ae8093b85b9bb3fbb9b12388b77db6248"><td class="mdescLeft">&#160;</td><td class="mdescRight">object to display number of coins on the screen  <a href="#ae8093b85b9bb3fbb9b12388b77db6248">More...</a><br /></td></tr>
 <tr class="separator:ae8093b85b9bb3fbb9b12388b77db6248"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16f3b12aec8a4646c97f999e498961f0"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_health.html#a16f3b12aec8a4646c97f999e498961f0">livesCountUI</a></td></tr>
+<tr class="separator:a16f3b12aec8a4646c97f999e498961f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d0a171f987d7daa97846020a0351a98"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_health.html#a2d0a171f987d7daa97846020a0351a98">godModeUI</a></td></tr>
+<tr class="memdesc:a2d0a171f987d7daa97846020a0351a98"><td class="mdescLeft">&#160;</td><td class="mdescRight">displays the number of player lives remaining  <a href="#a2d0a171f987d7daa97846020a0351a98">More...</a><br /></td></tr>
+<tr class="separator:a2d0a171f987d7daa97846020a0351a98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a2dc105641d870f4a48bf90a5d0dec87c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_health.html#a2dc105641d870f4a48bf90a5d0dec87c">Start</a> ()</td></tr>
+<tr class="memdesc:a2dc105641d870f4a48bf90a5d0dec87c"><td class="mdescLeft">&#160;</td><td class="mdescRight">true for god mode, false otherwise  <a href="#a2dc105641d870f4a48bf90a5d0dec87c">More...</a><br /></td></tr>
+<tr class="separator:a2dc105641d870f4a48bf90a5d0dec87c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c49fdd702b2cf0fca654ef6e502f311"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_health.html#a3c49fdd702b2cf0fca654ef6e502f311">Update</a> ()</td></tr>
+<tr class="memdesc:a3c49fdd702b2cf0fca654ef6e502f311"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks for health related test input and keeps track of the player's lives.  <a href="#a3c49fdd702b2cf0fca654ef6e502f311">More...</a><br /></td></tr>
+<tr class="separator:a3c49fdd702b2cf0fca654ef6e502f311"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace992787dceb63696c18f909eee99e42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_health.html#ace992787dceb63696c18f909eee99e42">Die</a> ()</td></tr>
+<tr class="memdesc:ace992787dceb63696c18f909eee99e42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transitions to the death screne.  <a href="#ace992787dceb63696c18f909eee99e42">More...</a><br /></td></tr>
+<tr class="separator:ace992787dceb63696c18f909eee99e42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9170f342d041b29c5f91d17162be21a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_health.html#a9170f342d041b29c5f91d17162be21a9">OnTriggerEnter2D</a> (Collider2D col)</td></tr>
+<tr class="memdesc:a9170f342d041b29c5f91d17162be21a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detects when the player collides with an object that would kill it and decides what will happen to the player.  <a href="#a9170f342d041b29c5f91d17162be21a9">More...</a><br /></td></tr>
+<tr class="separator:a9170f342d041b29c5f91d17162be21a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae0f20b06e36ebd22f08cddd7511c951"><td class="memItemLeft" align="right" valign="top">IEnumerator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_health.html#aae0f20b06e36ebd22f08cddd7511c951">Timer</a> ()</td></tr>
+<tr class="memdesc:aae0f20b06e36ebd22f08cddd7511c951"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timer for before the level starts again between lives.  <a href="#aae0f20b06e36ebd22f08cddd7511c951">More...</a><br /></td></tr>
+<tr class="separator:aae0f20b06e36ebd22f08cddd7511c951"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a8768569ca1b41754a4c6e5b5adceade2"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_health.html#a8768569ca1b41754a4c6e5b5adceade2">Dino</a></td></tr>
+<tr class="memdesc:a8768569ca1b41754a4c6e5b5adceade2"><td class="mdescLeft">&#160;</td><td class="mdescRight">reference to the third pterodactyl in level 1  <a href="#a8768569ca1b41754a4c6e5b5adceade2">More...</a><br /></td></tr>
+<tr class="separator:a8768569ca1b41754a4c6e5b5adceade2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93eda9b950f1fea1e09ecb342a7bfa66"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_player_score.html">PlayerScore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_health.html#a93eda9b950f1fea1e09ecb342a7bfa66">targetScript</a></td></tr>
+<tr class="memdesc:a93eda9b950f1fea1e09ecb342a7bfa66"><td class="mdescLeft">&#160;</td><td class="mdescRight">reference to the dino  <a href="#a93eda9b950f1fea1e09ecb342a7bfa66">More...</a><br /></td></tr>
+<tr class="separator:a93eda9b950f1fea1e09ecb342a7bfa66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0696df45a4b26d52dc223e8c21048c03"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_health.html#a0696df45a4b26d52dc223e8c21048c03">heart</a></td></tr>
+<tr class="memdesc:a0696df45a4b26d52dc223e8c21048c03"><td class="mdescLeft">&#160;</td><td class="mdescRight">reference to the <a class="el" href="class_player_score.html">PlayerScore</a> script  <a href="#a0696df45a4b26d52dc223e8c21048c03">More...</a><br /></td></tr>
+<tr class="separator:a0696df45a4b26d52dc223e8c21048c03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a147b2801a5068c279d9d146223269e01"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_health.html#a147b2801a5068c279d9d146223269e01">dead</a></td></tr>
+<tr class="memdesc:a147b2801a5068c279d9d146223269e01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds 1 to the player's lives if the player buys the heart powerup.  <a href="#a147b2801a5068c279d9d146223269e01">More...</a><br /></td></tr>
+<tr class="separator:a147b2801a5068c279d9d146223269e01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ebd94b8519d1962aa988fbfb85ef734"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_health.html#a0ebd94b8519d1962aa988fbfb85ef734">lives</a></td></tr>
+<tr class="memdesc:a0ebd94b8519d1962aa988fbfb85ef734"><td class="mdescLeft">&#160;</td><td class="mdescRight">displays whether god mode is on or off in the test suite  <a href="#a0ebd94b8519d1962aa988fbfb85ef734">More...</a><br /></td></tr>
+<tr class="separator:a0ebd94b8519d1962aa988fbfb85ef734"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08d18feb191094dbf47ff548be29b019"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_health.html#a08d18feb191094dbf47ff548be29b019">invincible</a></td></tr>
+<tr class="memdesc:a08d18feb191094dbf47ff548be29b019"><td class="mdescLeft">&#160;</td><td class="mdescRight">keeps track of the number of player lives remaining  <a href="#a08d18feb191094dbf47ff548be29b019">More...</a><br /></td></tr>
+<tr class="separator:a08d18feb191094dbf47ff548be29b019"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ace992787dceb63696c18f909eee99e42"></a>
@@ -130,6 +169,9 @@ Public Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void PlayerHealth.Die </td>
@@ -138,7 +180,14 @@ Public Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>Transitions to the death screne. </p>
 
 </div>
 </div>
@@ -147,6 +196,9 @@ Public Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void PlayerHealth.OnTriggerEnter2D </td>
@@ -156,7 +208,14 @@ Public Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>Detects when the player collides with an object that would kill it and decides what will happen to the player. </p>
 
 </div>
 </div>
@@ -165,6 +224,9 @@ Public Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void PlayerHealth.Start </td>
@@ -173,7 +235,42 @@ Public Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>true for god mode, false otherwise </p>
+<p>initializes member variables </p>
+
+</div>
+</div>
+<a id="aae0f20b06e36ebd22f08cddd7511c951"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae0f20b06e36ebd22f08cddd7511c951">&#9670;&nbsp;</a></span>Timer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IEnumerator PlayerHealth.Timer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Timer for before the level starts again between lives. </p>
 
 </div>
 </div>
@@ -182,6 +279,9 @@ Public Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void PlayerHealth.Update </td>
@@ -190,7 +290,14 @@ Public Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>Checks for health related test input and keeps track of the player's lives. </p>
 
 </div>
 </div>
@@ -216,14 +323,219 @@ Public Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool PlayerHealth.dead</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
+<p>Adds 1 to the player's lives if the player buys the heart powerup. </p>
 <p>boolean to indicate whether or not player died </p>
+
+</div>
+</div>
+<a id="a8768569ca1b41754a4c6e5b5adceade2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8768569ca1b41754a4c6e5b5adceade2">&#9670;&nbsp;</a></span>Dino</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GameObject PlayerHealth.Dino</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>reference to the third pterodactyl in level 1 </p>
+
+</div>
+</div>
+<a id="a2d0a171f987d7daa97846020a0351a98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d0a171f987d7daa97846020a0351a98">&#9670;&nbsp;</a></span>godModeUI</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GameObject PlayerHealth.godModeUI</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>displays the number of player lives remaining </p>
+
+</div>
+</div>
+<a id="a0696df45a4b26d52dc223e8c21048c03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0696df45a4b26d52dc223e8c21048c03">&#9670;&nbsp;</a></span>heart</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PlayerHealth.heart</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>reference to the <a class="el" href="class_player_score.html">PlayerScore</a> script </p>
+
+</div>
+</div>
+<a id="a08d18feb191094dbf47ff548be29b019"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08d18feb191094dbf47ff548be29b019">&#9670;&nbsp;</a></span>invincible</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PlayerHealth.invincible</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>keeps track of the number of player lives remaining </p>
+
+</div>
+</div>
+<a id="a0ebd94b8519d1962aa988fbfb85ef734"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ebd94b8519d1962aa988fbfb85ef734">&#9670;&nbsp;</a></span>lives</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int PlayerHealth.lives</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>displays whether god mode is on or off in the test suite </p>
+
+</div>
+</div>
+<a id="a16f3b12aec8a4646c97f999e498961f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16f3b12aec8a4646c97f999e498961f0">&#9670;&nbsp;</a></span>livesCountUI</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GameObject PlayerHealth.livesCountUI</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5719ff33405586360e84bd1ccd2297e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5719ff33405586360e84bd1ccd2297e5">&#9670;&nbsp;</a></span>pt1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GameObject PlayerHealth.pt1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2e53d845bdeb9f8ab550c0b35739a7a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e53d845bdeb9f8ab550c0b35739a7a6">&#9670;&nbsp;</a></span>pt2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GameObject PlayerHealth.pt2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>reference to the first pterodactyl in level 1 </p>
+
+</div>
+</div>
+<a id="aa9f65eb7ca6bec4c8e6aae35145644d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9f65eb7ca6bec4c8e6aae35145644d1">&#9670;&nbsp;</a></span>pt3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GameObject PlayerHealth.pt3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>reference to the second pterodactyl in level 1 </p>
+
+</div>
+</div>
+<a id="a93eda9b950f1fea1e09ecb342a7bfa66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93eda9b950f1fea1e09ecb342a7bfa66">&#9670;&nbsp;</a></span>targetScript</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_player_score.html">PlayerScore</a> PlayerHealth.targetScript</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>reference to the dino </p>
 
 </div>
 </div>
@@ -236,7 +548,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_player_health.html">PlayerHealth</a></li>
-    <li class="footer">Generated on Sun Apr 8 2018 22:29:11 for EECS448 Project 3 by
+    <li class="footer">Generated on Wed May 2 2018 17:03:28 for EECS448 Project 4 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>
