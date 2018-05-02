@@ -112,7 +112,7 @@ public class PlayerHealth : MonoBehaviour
 			if (SceneManager.GetActiveScene().name == "Level 5")
 			{
 				SceneManager.LoadScene("Level 5", LoadSceneMode.Single);
-				transform.position = new Vector2(-8.06f, -3.956429f);
+				transform.position = new Vector2(-8.06f, -3.95642f);
 			}
 			if (SceneManager.GetActiveScene().name == "Level6")
 			{
@@ -122,7 +122,7 @@ public class PlayerHealth : MonoBehaviour
 			if (SceneManager.GetActiveScene().name == "Level7")
 			{
 				SceneManager.LoadScene("Level7", LoadSceneMode.Single);
-				transform.position = new Vector2(-8.06f, -3.956429f);
+				transform.position = new Vector2(-8.04778f, -3.70197f);
 			}
 			Time.timeScale = 0;
 			StartCoroutine (Timer ());

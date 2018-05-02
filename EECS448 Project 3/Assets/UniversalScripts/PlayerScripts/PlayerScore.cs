@@ -209,16 +209,16 @@ public class PlayerScore : MonoBehaviour {
 					transform.position = new Vector2(-7.98f, -2.64641f);
 				}
 				if (lvl == 5) {
-					SceneManager.LoadScene("Level 2", LoadSceneMode.Single);
-					transform.position = new Vector2(-5.72f, -3.14f);
+					SceneManager.LoadScene("Level5", LoadSceneMode.Single);
+					transform.position = new Vector2(-8.06f, -3.95642f);
 				}
 				if (lvl == 6) {
 					SceneManager.LoadScene("Level6", LoadSceneMode.Single);
 					transform.position = new Vector2(-7.98986f, -3.77048f);
 				}
 				if (lvl == 7) {
-					SceneManager.LoadScene("Level 2", LoadSceneMode.Single);
-					transform.position = new Vector2(-5.72f, -3.14f);
+					SceneManager.LoadScene("Level7", LoadSceneMode.Single);
+					transform.position = new Vector2(-8.04778f, -3.70197f);
 				}
                 displayExit = false;
             }
