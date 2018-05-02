@@ -30,8 +30,30 @@ Sprite References:
     Marta Nowaczyk - from https://opengameart.org/
     https://www.spriters-resource.com/pc_computer/trexgame/sheet/78171/
     Darius Guerrero - from https://opengameart.org/
-    Heather Lee Harvey -> http://EmeraldActivities.com,  http://opengameart.org/users/emerald
+    Heather Lee Harvey - http://EmeraldActivities.com,  http://opengameart.org/users/emerald
     http://OpenPixelProject.com
+    dontmind8.blogspot.com
+    Clint Bellanger - from https://opengameart.org/
+    Damar Indra - from https://opengameart.org/
+    Pranaykarani - from https://opengameart.org/
+    © 2012-2013 Julien Jorge <julien.jorge@stuff-o-matic.com>
+    Calciumtrice - from https://opengameart.org/
+    GrafxKid - from https://opengameart.org/
+    Molly "Cougarmint" Willits - from https://opengameart.org/
+    https://opengameart.org/content/water
+    https://opengameart.org/content/fish-pack-0
+    https://opengameart.org/content/snow-tiles
+    https://gigazine.net/gsc_news/en/20110408_facebook_opencompute
+    https://www.emaze.com/@AWIIZZTL/Movistar
+    https://forum.quartertothree.com/t/google-fiber-1-000-mbps-up-and-down/69963
+    https://consomac.fr/news-2489-apple-discute-avec-comcast-pour-lapple-tv.html
+    http://logok.org/twc-logo/
+    https://opengameart.org/content/2d-platform-dungeon-accessories-pack
+    https://bevouliin.com/flying-heroes-spaceship-attack/
+    https://opengameart.org/content/cars-0
+    https://opengameart.org/content/lpc-style-wood-bridges-and-steel-flooring
+    https://mikeshouts.com/8-bit-pixel-trash-can-holds-your-real-world-deletes/
+    https://opengameart.org/content/street-lamp​
 
 Doxygen plug-in for Unity:
     http://www.jacobpennock.com/Blog/unity-automatic-documentation-generation-an-editor-plugin/
