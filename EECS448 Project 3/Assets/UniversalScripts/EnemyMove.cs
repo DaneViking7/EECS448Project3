@@ -20,10 +20,10 @@ public class EnemyMove : MonoBehaviour {
 				direction = 1; //!< go back up if at or below min
 			}
 			transform.Translate (0, velocity * direction * Time.deltaTime, 0); //!< transformation for up/down movement
-		} else if (gameObject.name == "twc") {
+		} else if (gameObject.name == "twc" || gameObject.name == "twc(Clone)") {
 			enemySpeed = 2;
 			gameObject.GetComponent<Rigidbody2D> ().velocity = new Vector2 (1, 0) * enemySpeed; //!< enemy moves in positive x direction
-		} else if (gameObject.name == "rabbit") {
+		} else if (gameObject.name == "rabbit" || gameObject.name == "rabbit(Clone)") {
 			enemySpeed = 40; //!< rabbit bounces up and down very fast
 			ceiling = -2.25;
 			floor = -3.75;
@@ -56,7 +56,20 @@ public class EnemyMove : MonoBehaviour {
 				direction = 1;
 			}
 			transform.Translate (velocity * direction * Time.deltaTime, 0, 0);
-		} else {
+		}
+		else if (gameObject.name == "peacock(Clone)") {
+			enemySpeed = 10;
+			double right = 440;
+			double left = 433;
+			if (transform.position.x >= right) {
+				direction = -1;
+			}
+			if (transform.position.x <= left) {
+				direction = 1;
+			}
+			transform.Translate (velocity * direction * Time.deltaTime, 0, 0);
+		}
+		else {
 			gameObject.GetComponent<Rigidbody2D> ().velocity = new Vector2 (-1, 0) * enemySpeed; //!< all other enemies move in negative x direction
 		}
 	}
