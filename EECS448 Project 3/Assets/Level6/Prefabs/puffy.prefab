@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212070125306311876}
   - component: {fileID: 50137052510569162}
   - component: {fileID: 61212456248555804}
-  - component: {fileID: 114292505087565930}
+  - component: {fileID: 114520358144178194}
   m_Layer: 0
   m_Name: puffy
   m_TagString: Kill Object
@@ -88,7 +88,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0816116, y: 1.0215182}
   m_EdgeRadius: 0
---- !u!114 &114292505087565930
+--- !u!114 &114520358144178194
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -96,7 +96,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1843225795248348}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cd2054179ec1460aaf7d23bc6f0f93d, type: 3}
+  m_Script: {fileID: 11500000, guid: 315a22dd823cc2c4f9d9f89e64691d88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &212070125306311876

@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class FireballMove : MonoBehaviour {
 
-	GameObject Dino;
-	private int speed = 15; //!< speed that dinosaur moves across screen
+	GameObject Dino;//! reference to the player dino object
+	private int speed = 15; //!< speed that fireball moves across screen
 
+	//! flips the fireball to face the direction the dino is facing
 	void Start() {
 		Dino = GameObject.Find("Dino");
 		if (Dino.GetComponent<SpriteRenderer> ().flipX == true) {
@@ -17,6 +18,7 @@ public class FireballMove : MonoBehaviour {
 			gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(1, 0) * speed;
 	}
 
+	//! destroys the fireball and the kill object when the fireball connects with it
 	private void OnTriggerEnter2D(Collider2D trig)
 	{
 		if (trig.gameObject.tag == "Kill Object")
